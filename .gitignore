@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/eWolfMetaImage/v16
+/eWolfMetaImage/bin/Debug
+/eWolfMetaImage/obj/Debug
+/eWolfTagSystem/.vs/eWolfTagSystem
+/eWolfTagSystem/eWolfTagSystem/bin/Debug/netcoreapp2.0
+/eWolfTagSystem/eWolfTagSystem/obj
+/eWolfTagSystem/eWolfTagSystem.UnitTests/bin/Debug/netcoreapp2.2
+/eWolfTagSystem/eWolfTagSystem.UnitTests/obj
+/CleanProject.bat
