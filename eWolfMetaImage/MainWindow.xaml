@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:eWolfMetaImage"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="538.043" Width="800">
     <Grid Margin="0,0,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
@@ -16,8 +16,8 @@
             <RowDefinition Height="48" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="139,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="505" Text="C:\Personal\Pics" Grid.Column="1" />
-        <Label Content="Image Path" HorizontalAlignment="Left" Margin="62,5,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.987,0.519" Width="77" Grid.Column="1" />
+
+        <Label Content="Image Path" HorizontalAlignment="Left" Margin="83,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.987,0.519" Width="77" Grid.Column="1" />
         <Grid Grid.Column="1" Grid.Row="1" Margin="0,0,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
@@ -30,5 +30,7 @@
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
         </Grid>
+        <Button Content="Go" Grid.Column="1" HorizontalAlignment="Left" Margin="603,16,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="-0.017,0.491" Click="Button_Click" />
+        <TextBox x:Name="ImageFolder" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="160,15,0,0" TextWrapping="Wrap" Text="C:\Users\ThinkCentre\Pictures\_ToName\NameTests\" VerticalAlignment="Top" Width="438" />
     </Grid>
 </Window>

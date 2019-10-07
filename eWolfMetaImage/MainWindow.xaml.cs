@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,23 @@ namespace eWolfMetaImage
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string[] files = GetAllImages();
+
+            foreach (string file in files)
+            {
+                Console.WriteLine(file);
+            }
+        }
+
+        private string[] GetAllImages()
+        {
+            string[] files = Directory.GetFiles(ImageFolder.Text, "*.*", SearchOption.AllDirectories);
+
+            return files;
         }
     }
 }
