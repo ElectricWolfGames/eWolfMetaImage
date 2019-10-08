@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eWolfMetaImage.UserControls;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,6 +22,8 @@ namespace eWolfMetaImage
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<ImageHolder> _items = new List<ImageHolder>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,12 +31,15 @@ namespace eWolfMetaImage
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            _items = new List<ImageHolder>();
             string[] files = GetAllImages();
 
             foreach (string file in files)
             {
                 Console.WriteLine(file);
+                _items.Add(new ImageHolder(file));
             }
+            Items.ItemsSource = _items;
         }
 
         private string[] GetAllImages()

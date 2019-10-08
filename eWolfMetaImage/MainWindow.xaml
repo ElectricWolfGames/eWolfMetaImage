@@ -10,7 +10,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
             <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="128" />
+            <ColumnDefinition Width="200" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="48" />
@@ -19,18 +19,16 @@
 
         <Label Content="Image Path" HorizontalAlignment="Left" Margin="83,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.987,0.519" Width="77" Grid.Column="1" />
         <Grid Grid.Column="1" Grid.Row="1" Margin="0,0,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*" />
-                <RowDefinition Height="1*" />
-                <RowDefinition Height="1*" />
-            </Grid.RowDefinitions>
+            <ItemsControl x:Name="Items">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="4" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
         </Grid>
         <Button Content="Go" Grid.Column="1" HorizontalAlignment="Left" Margin="603,16,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="-0.017,0.491" Click="Button_Click" />
         <TextBox x:Name="ImageFolder" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="160,15,0,0" TextWrapping="Wrap" Text="C:\Users\ThinkCentre\Pictures\_ToName\NameTests\" VerticalAlignment="Top" Width="438" />
+        <StackPanel Grid.Column="2" Margin="0,10" Grid.Row="1" Background="#FF425F7C" />
     </Grid>
 </Window>
