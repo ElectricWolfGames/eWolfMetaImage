@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\eWolfTagSystem\eWolfTagSystem.csproj" />
+    <ProjectReference Include="..\eWolfTagHolders\eWolfTagHolders.csproj" />
   </ItemGroup>
 
 </Project>

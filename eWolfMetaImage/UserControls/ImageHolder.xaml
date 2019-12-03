@@ -4,8 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:eWolfMetaImage.UserControls"
-             mc:Ignorable="d" Height="200" Width="200" Background="#FF1B1919">
+             mc:Ignorable="d" Height="110" Width="110">
     <Grid>
-        <Image x:Name="ShowImage" HorizontalAlignment="Left" Height="190" VerticalAlignment="Top" Width="190" Margin="5,5,5,5" />
+        <Image Name="ImageData" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" />
     </Grid>
 </UserControl>

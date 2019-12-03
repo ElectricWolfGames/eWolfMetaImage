@@ -22,7 +22,7 @@ namespace eWolfMetaImage
     /// </summary>
     public partial class MainWindow : Window
     {
-        private List<ImageHolder> _items = new List<ImageHolder>();
+        private List<ImageHolder> _imageHolders = new List<ImageHolder>();
 
         public MainWindow()
         {
@@ -31,15 +31,17 @@ namespace eWolfMetaImage
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _items = new List<ImageHolder>();
+            _imageHolders = new List<ImageHolder>();
+
             string[] files = GetAllImages();
 
             foreach (string file in files)
             {
-                Console.WriteLine(file);
-                _items.Add(new ImageHolder(file));
+                ImageHolder ih = new ImageHolder();
+                ih.SetImage(file);
+                _imageHolders.Add(ih);
             }
-            Items.ItemsSource = _items;
+            ImageList.ItemsSource = _imageHolders;
         }
 
         private string[] GetAllImages()

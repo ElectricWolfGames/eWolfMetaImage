@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using eWolfTagSystem.Helpers;
+using eWolfTagHolders.Helpers;
 using FluentAssertions;
 
 namespace eWolfTagSystem.UnitTests.Helpers
@@ -30,8 +30,8 @@ namespace eWolfTagSystem.UnitTests.Helpers
             TagHelper.MakePascalCase(line).Should().Be(expectedLine);
         }
 
-        [TestCase("asd", "a", "d", "Asd A D")]
-        [TestCase("PartOfWords", "a", "d", "PartOfWords A D")]
+        [TestCase("0123", "a", "d", "0123 A D")]
+        [TestCase("0123", "PartOfWords", "a", "0123 A PartOfWords")]
         public void ShouldCreateFileName(string partA, string partB, string partC, string expected)
         {
             string[] words = new string[] { partA, partB, partC };
