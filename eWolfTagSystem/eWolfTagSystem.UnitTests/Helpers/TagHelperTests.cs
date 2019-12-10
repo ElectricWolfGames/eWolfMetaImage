@@ -1,6 +1,6 @@
-﻿using NUnit.Framework;
-using eWolfTagHolders.Helpers;
+﻿using eWolfTagHolders.Helpers;
 using FluentAssertions;
+using NUnit.Framework;
 
 namespace eWolfTagSystem.UnitTests.Helpers
 {

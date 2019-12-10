@@ -14,21 +14,64 @@ namespace eWolfMetaImage
         private string _allTagsSelection = string.Empty;
         private List<ImageDetails> _imageHolders = new List<ImageDetails>();
         private int _index = 0;
+        private TagListHolders _tags = new TagListHolders();
 
         public SingleImage()
         {
             InitializeComponent();
 
-            ServiceLocator.Instance.InjectService<AllTagHolder>(new AllTagHolder());
+            ServiceLocator.Instance.InjectService<LocationTagHolderServices>(LocationTagHolderServices.Load());
+            ServiceLocator.Instance.InjectService<GroupTagsHolderService>(new GroupTagsHolderService());
 
             PopulateGroupData();
             PopulateTagData();
+        }
+
+        private void Button_AddLocationTagClick(object sender, RoutedEventArgs e)
+        {
+            string newTag = NewLocationTagsToAdd.Text;
+
+            LocationTagHolderServices lths = LocationTagHolderServices.GetAllTagHolder;
+
+            lths.Add(newTag);
+            lths.TidyUp();
+            ApplyLocationTagsToList();
+            lths.Save();
+        }
+
+        private void Button_AddTagClick(object sender, RoutedEventArgs e)
+        {
+            string newTag = NewTagsToAdd.Text;
+
+            _tags.Add(newTag);
+            _tags.TidyUp();
+            ApplyAllTagsToList();
+            _tags.Save();
         }
 
         private void AllTag_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ComboBox comboBox = sender as ComboBox;
             _allTagsSelection = (string)comboBox.SelectedItem;
+        }
+
+        private void ApplyLocationTagsToList()
+        {
+            AllTag.Items.Clear();
+            var allTagHolder = LocationTagHolderServices.GetAllTagHolder;
+            foreach (var atag in allTagHolder.AllTags)
+            {
+                AllTag.Items.Add(atag);
+            }
+        }
+
+        private void ApplyAllTagsToList()
+        {
+            TagList.Items.Clear();
+            foreach (string tagName in _tags.Tags)
+            {
+                TagList.Items.Add(tagName);
+            }
         }
 
         private void Button_ClearTags(object sender, RoutedEventArgs e)
@@ -103,7 +146,7 @@ namespace eWolfMetaImage
 
         private void CheckImageTag(ImageDetails imageDetails)
         {
-            GroupTagsHolder groupHolder = GroupTagsHolder.GetGroupTagsHolder;
+            GroupTagsHolderService groupHolder = GroupTagsHolderService.GetGroupTagsHolder;
             TagHolders tagHolder = imageDetails.TagHolder;
             groupHolder.AdjustTags(tagHolder);
 
@@ -118,7 +161,7 @@ namespace eWolfMetaImage
 
         private void PopulateGroupData()
         {
-            var groupHolder = GroupTagsHolder.GetGroupTagsHolder;
+            var groupHolder = GroupTagsHolderService.GetGroupTagsHolder;
 
             GroupTags groupTags = new GroupTags("92214,LeicesterCity,Class9F,2-10-0");
             groupTags.Add("92214");
@@ -139,44 +182,30 @@ namespace eWolfMetaImage
             groupTags.Add("D123");
             groupTags.AddClearTags("LeicestershireAndDerbyshireYeomanry");
             groupHolder.GroupTagCollection.Add(groupTags);
-
-            groupTags = new GroupTags("48305,Stanier,Class8F,2-8-0");
-            groupTags.Add("48305");
-            groupHolder.GroupTagCollection.Add(groupTags);
-
-            groupTags = new GroupTags("926,Repton,4-4-0");
-            groupTags.Add("926");
-            groupTags.Add("Repton");
-            groupHolder.GroupTagCollection.Add(groupTags);
-
-            groupTags = new GroupTags("78018,Standard2MT,2-6-0");
-            groupTags.Add("78018");
-            groupHolder.GroupTagCollection.Add(groupTags);
         }
 
         private void PopulateTagData()
         {
-            TagList.Items.Add("92214");
-            TagList.Items.Add("6990");
-            TagList.Items.Add("50017");
-            TagList.Items.Add("Class08");
-            TagList.Items.Add("DMU");
+            _tags = TagListHolders.Load();
 
-            TagList.Items.Add("45305");
-            TagList.Items.Add("48305");
-
-            var groupHolder = GroupTagsHolder.GetGroupTagsHolder;
+            var groupHolder = GroupTagsHolderService.GetGroupTagsHolder;
             foreach (var group in groupHolder.GroupTagCollection)
             {
-                TagList.Items.Add(group.MasterTag);
+                _tags.Add(group.MasterTag);
             }
 
-            var allTagHolder = AllTagHolder.GetAllTagHolder;
+            ApplyLocationTagsToList();
+
+            var allTagHolder = LocationTagHolderServices.GetAllTagHolder;
             foreach (var atag in allTagHolder.AllTags)
             {
-                TagList.Items.Add(atag);
-                AllTag.Items.Add(atag);
+                _tags.Add(atag);
+                //AllTag.Items.Add(atag);
             }
+
+            _tags.TidyUp();
+            ApplyAllTagsToList();
+            _tags.Save();
         }
 
         private void SaveCurrentImage()

@@ -55,8 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Data\AllTagHolder.cs" />
+    <Compile Include="Configuration\Consts.cs" />
+    <Compile Include="Services\GroupTagsHolderService.cs" />
+    <Compile Include="Services\LocationTagHolderServices.cs" />
     <Compile Include="Data\ImageDetails.cs" />
+    <Compile Include="Data\TagListHolders.cs" />
+    <Compile Include="Helpers\PersistenceHelper.cs" />
     <Compile Include="SingleImage.xaml.cs">
       <DependentUpon>SingleImage.xaml</DependentUpon>
     </Compile>

@@ -1,6 +1,4 @@
-﻿using eWolfTagHolders.Services;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace eWolfTagHolders.Tags
 {
@@ -9,14 +7,6 @@ namespace eWolfTagHolders.Tags
         public GroupTagsHolder()
         {
             GroupTagCollection = new List<GroupTags>();
-        }
-
-        public static GroupTagsHolder GetGroupTagsHolder
-        {
-            get
-            {
-                return ServiceLocator.Instance.GetService<GroupTagsHolder>();
-            }
         }
 
         public List<GroupTags> GroupTagCollection { get; set; }

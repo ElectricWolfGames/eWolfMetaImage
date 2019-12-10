@@ -17,18 +17,23 @@
                 <ColumnDefinition Width="10" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <ListBox Name ="TagList" Grid.Column="2"  HorizontalAlignment="Center" Height="522" Margin="10.4,45,11.2,10.6" VerticalAlignment="Center" Width="268" MouseDoubleClick="TagList_MouseDoubleClick" />
+            <ListBox Name ="TagList" Grid.Column="2"  HorizontalAlignment="Center" Height="450" Margin="10,116,10,10" VerticalAlignment="Center" Width="268" MouseDoubleClick="TagList_MouseDoubleClick" />
             <Image Name ="Image" HorizontalAlignment="Left" Height="521" Margin="10,45,0,0" VerticalAlignment="Top" Width="580" />
             <Label Name ="NewFileName" Content="UpdateNameLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="566" />
-            <ComboBox Name ="AllTag"  Grid.Column="2" HorizontalAlignment="Left" Margin="10.4,13,0,0" VerticalAlignment="Top" Width="268" SelectionChanged="AllTag_SelectionChanged" />
+            <ComboBox Name ="AllTag"  Grid.Column="2" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="197" SelectionChanged="AllTag_SelectionChanged" />
+            <TextBox Name ="NewTagsToAdd" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,88,0,0" TextWrapping="Wrap" Text="NewTags" VerticalAlignment="Top" Width="215" />
+            <Button Name="AddTagButton" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Grid.Column="2" Margin="230,88,0,0" Height="23" Click="Button_AddTagClick" />
+            <TextBox x:Name ="NewLocationTagsToAdd" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,26,0,0" TextWrapping="Wrap" Text="LocationTag" VerticalAlignment="Top" Width="215" />
+            <Button x:Name="AddLocationTagButtony" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Grid.Column="2" Margin="230,26,0,0" Height="23" Click="Button_AddLocationTagClick" />
+            <Label Content="Location Tags" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" />
         </Grid>
         <Label Content="Image Path" HorizontalAlignment="Left" Margin="40,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.987,0.519" Width="77" />
         <Button Content="Go" HorizontalAlignment="Left" Margin="665,10,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="-0.017,0.491" Click="Button_GetImages" />
-        <TextBox x:Name="ImageFolder" HorizontalAlignment="Left" Height="23" Margin="117,9,0,0" TextWrapping="Wrap" Text="C:\Users\ThinkCentre\Pictures\Photos\2019 7-12\2019-11-17 GCR Last Hurrah\" VerticalAlignment="Top" Width="543" />
+        <TextBox x:Name="ImageFolder" HorizontalAlignment="Left" Height="23" Margin="117,9,0,0" TextWrapping="Wrap" Text="C:\Personal\TestPics\" VerticalAlignment="Top" Width="543" />
         <Button Content="Next" HorizontalAlignment="Left" Margin="495,37,0,0" VerticalAlignment="Top" Width="75" Click="Button_NextClick" />
         <Button Content="Prev" HorizontalAlignment="Left" Margin="415,37,0,0" VerticalAlignment="Top" Width="75" Click="Button_PrevClick" />
         <Button Content="ClearTags" HorizontalAlignment="Left" Margin="631,37,0,0" VerticalAlignment="Top" Width="75" Click="Button_ClearTags" />
         <Button Content="Copy Tags" HorizontalAlignment="Left" Margin="711,37,0,0" VerticalAlignment="Top" Width="75" Click="Button_CopyTags" />
-        <Button Content="UpdateAll" HorizontalAlignment="Left" Margin="814,37,0,0" VerticalAlignment="Top" Width="75" Click="Button_UpdateAllTags" />
+        <Button Content="UpdateAll" HorizontalAlignment="Left" Margin="824,52,0,0" VerticalAlignment="Top" Width="64" Click="Button_UpdateAllTags" Grid.Row="1" Height="23" />
     </Grid>
 </Window>

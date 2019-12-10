@@ -1,8 +1,6 @@
 ﻿using eWolfCommon.Services;
-using eWolfTagHolders.Tags;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace eWolfTagHolders.Services
 {
@@ -12,7 +10,6 @@ namespace eWolfTagHolders.Services
         {
             _services = new Dictionary<Type, object>
             {
-                { typeof(GroupTagsHolder), new GroupTagsHolder() },
             };
         }
 
