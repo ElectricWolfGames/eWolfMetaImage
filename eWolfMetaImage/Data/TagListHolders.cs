@@ -1,44 +1,26 @@
-﻿using eWolfTagHolders.Helpers;
+﻿using eWolfCommon.Helpers;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Xml.Serialization;
 
 namespace eWolfMetaImage.Data
 {
     [Serializable]
-    public class TagListHolders
+    public class TagListHolders : BasicTagListBase
     {
-        private List<string> _tags { get; set; } = new List<string>();
-
-        public List<string> Tags
-        {
-            get
-            {
-                return _tags;
-            }
-        }
-
-        public void Add(string tag)
-        {
-            _tags.Add(TagHelper.MakePascalCase(tag));
-            Modifyed = true;
-        }
-
-        public static string GetFileName { get; } = Configuration.Consts.WorkFolder + "tags.xml";
-
-        public bool Modifyed { get; set; }
+        public static string GetFileName { get; } = "tags.xml";
 
         public void Save()
         {
-            Save(this);
+            Save(this, Configuration.Consts.WorkFolder + GetFileName);
         }
 
-        public static void Save(TagListHolders taglist)
+        private static void Save(TagListHolders taglist, string filename)
         {
+            FileHelper.CreateBackUp(Configuration.Consts.WorkFolder, GetFileName);
+
             XmlSerializer xs = new XmlSerializer(typeof(TagListHolders));
-            using (TextWriter tw = new StreamWriter(GetFileName))
+            using (TextWriter tw = new StreamWriter(filename))
             {
                 xs.Serialize(tw, taglist);
             }
@@ -46,16 +28,19 @@ namespace eWolfMetaImage.Data
 
         public static TagListHolders Load()
         {
-            XmlSerializer xs = new XmlSerializer(typeof(TagListHolders));
-            using (var sr = new StreamReader(GetFileName))
+            try
             {
-                return (TagListHolders)xs.Deserialize(sr);
+                XmlSerializer xs = new XmlSerializer(typeof(TagListHolders));
+                using (var sr = new StreamReader(Configuration.Consts.WorkFolder + GetFileName))
+                {
+                    return (TagListHolders)xs.Deserialize(sr);
+                }
             }
-        }
-
-        internal void TidyUp()
-        {
-            _tags = _tags.Distinct().ToList();
+            catch
+            {
+                TagListHolders tlh = new TagListHolders();
+                return tlh;
+            }
         }
     }
 }

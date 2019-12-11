@@ -14,7 +14,7 @@ namespace eWolfMetaImage
         private string _allTagsSelection = string.Empty;
         private List<ImageDetails> _imageHolders = new List<ImageDetails>();
         private int _index = 0;
-        private TagListHolders _tags = new TagListHolders();
+        private TagListHolders _availableTags = new TagListHolders();
 
         public SingleImage()
         {
@@ -31,7 +31,7 @@ namespace eWolfMetaImage
         {
             string newTag = NewLocationTagsToAdd.Text;
 
-            LocationTagHolderServices lths = LocationTagHolderServices.GetAllTagHolder;
+            LocationTagHolderServices lths = LocationTagHolderServices.GetLocationTagHolderServices;
 
             lths.Add(newTag);
             lths.TidyUp();
@@ -43,10 +43,10 @@ namespace eWolfMetaImage
         {
             string newTag = NewTagsToAdd.Text;
 
-            _tags.Add(newTag);
-            _tags.TidyUp();
+            _availableTags.Add(newTag);
+            _availableTags.TidyUp();
             ApplyAllTagsToList();
-            _tags.Save();
+            _availableTags.Save();
         }
 
         private void AllTag_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -58,8 +58,8 @@ namespace eWolfMetaImage
         private void ApplyLocationTagsToList()
         {
             AllTag.Items.Clear();
-            var allTagHolder = LocationTagHolderServices.GetAllTagHolder;
-            foreach (var atag in allTagHolder.AllTags)
+            var allTagHolder = LocationTagHolderServices.GetLocationTagHolderServices;
+            foreach (var atag in allTagHolder.Tags)
             {
                 AllTag.Items.Add(atag);
             }
@@ -68,14 +68,28 @@ namespace eWolfMetaImage
         private void ApplyAllTagsToList()
         {
             TagList.Items.Clear();
-            foreach (string tagName in _tags.Tags)
+            foreach (string tagName in _availableTags.Tags)
             {
                 TagList.Items.Add(tagName);
             }
         }
 
+        private bool IsValid(int index)
+        {
+            if (_imageHolders.Count < index)
+                return false;
+
+            if (index < 0)
+                return false;
+
+            return true;
+        }
+
         private void Button_ClearTags(object sender, RoutedEventArgs e)
         {
+            if (!IsValid(_index))
+                return;
+
             ImageDetails item = _imageHolders[_index];
             if (item == null)
                 return;
@@ -186,30 +200,32 @@ namespace eWolfMetaImage
 
         private void PopulateTagData()
         {
-            _tags = TagListHolders.Load();
+            _availableTags = TagListHolders.Load();
 
             var groupHolder = GroupTagsHolderService.GetGroupTagsHolder;
             foreach (var group in groupHolder.GroupTagCollection)
             {
-                _tags.Add(group.MasterTag);
+                _availableTags.Add(group.MasterTag);
             }
 
             ApplyLocationTagsToList();
 
-            var allTagHolder = LocationTagHolderServices.GetAllTagHolder;
-            foreach (var atag in allTagHolder.AllTags)
+            var allTagHolder = LocationTagHolderServices.GetLocationTagHolderServices;
+            foreach (var atag in allTagHolder.Tags)
             {
-                _tags.Add(atag);
-                //AllTag.Items.Add(atag);
+                _availableTags.Add(atag);
             }
 
-            _tags.TidyUp();
+            _availableTags.TidyUp();
             ApplyAllTagsToList();
-            _tags.Save();
+            _availableTags.Save();
         }
 
         private void SaveCurrentImage()
         {
+            if (!IsValid(_index))
+                return;
+
             Image.Source = null;
 
             SaveCurrentImage(_imageHolders[_index]);
@@ -232,6 +248,9 @@ namespace eWolfMetaImage
 
         private void ShowImage()
         {
+            if (!IsValid(_index))
+                return;
+
             CheckImageTag(_imageHolders[_index]);
 
             string filename = _imageHolders[_index].FilePath;
@@ -249,6 +268,9 @@ namespace eWolfMetaImage
 
         private void TagList_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+            if (!IsValid(_index))
+                return;
+
             ListBox listBox = sender as ListBox;
 
             ImageDetails item = _imageHolders[_index];
