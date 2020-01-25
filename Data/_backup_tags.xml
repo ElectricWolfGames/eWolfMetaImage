@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Modifyed>true</Modifyed>
   <Tags>
     <string>45305</string>
     <string>48305</string>
@@ -22,6 +23,21 @@
     <string>SomeWordWithSpaces</string>
     <string>LocationTag</string>
     <string>LocationOtherTag</string>
+    <string>78018,BRStandardClass2,2-6-0</string>
+    <string>MetroCammellDieselRailcar</string>
+    <string>Track</string>
+    <string>13101</string>
+    <string>48624</string>
+    <string>73156</string>
+    <string>LeicesterNorth</string>
+    <string>D6535</string>
+    <string>Rothley</string>
+    <string>Wagon</string>
+    <string>QuornAndWoodhouse</string>
+    <string>08694</string>
+    <string>D3690</string>
+    <string>46521</string>
+    <string>13101,Clas08</string>
+    <string>D3690,Class08</string>
   </Tags>
-  <Modifyed>true</Modifyed>
 </TagListHolders>

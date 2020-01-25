@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LocationTagHolderServices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Modifyed>false</Modifyed>
-  <Tags>
+  <AllTags>
+    <string />
     <string>GCR</string>
-  </Tags>
+    <string>Butterly</string>
+    <string>LocationTag</string>
+    <string>LocationOtherTag</string>
+  </AllTags>
 </LocationTagHolderServices>

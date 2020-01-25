@@ -196,6 +196,18 @@ namespace eWolfMetaImage
             groupTags.Add("D123");
             groupTags.AddClearTags("LeicestershireAndDerbyshireYeomanry");
             groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("78018,BRStandardClass2,2-6-0");
+            groupTags.Add("78018");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("13101,Clas08");
+            groupTags.Add("13101");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D3690,Class08");
+            groupTags.Add("D3690");
+            groupHolder.GroupTagCollection.Add(groupTags);
         }
 
         private void PopulateTagData()

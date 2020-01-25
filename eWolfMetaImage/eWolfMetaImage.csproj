@@ -120,8 +120,8 @@
       <Project>{C1BB7922-5A1D-4C5D-B39A-DF628E8E5680}</Project>
       <Name>eWolfCommon</Name>
     </ProjectReference>
-    <ProjectReference Include="..\eWolfTagSystem\eWolfTagHolders\eWolfTagHolders.csproj">
-      <Project>{c4727731-818c-4db6-aeba-9a969d85a88e}</Project>
+    <ProjectReference Include="..\..\eWolfApps\eWolfTagSystem\eWolfTagHolders\eWolfTagHolders.csproj">
+      <Project>{7BA2F52B-4FD9-4B43-B7C1-557FB88BFCDC}</Project>
       <Name>eWolfTagHolders</Name>
     </ProjectReference>
   </ItemGroup>

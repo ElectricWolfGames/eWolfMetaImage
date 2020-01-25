@@ -14,3 +14,4 @@
 /.vs/eWolfMetaImage/DesignTimeBuild
 /eWolfTagSystem/eWolfTagHolders/bin/Debug/netstandard2.0
 /eWolfTagSystem/eWolfTagHolders/obj
+/packages
