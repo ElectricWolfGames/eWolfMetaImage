@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LocationTagHolderServices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <AllTags>
-    <string />
+  <Modifyed>false</Modifyed>
+  <Tags>
     <string>GCR</string>
-    <string>Butterly</string>
-    <string>LocationTag</string>
-    <string>LocationOtherTag</string>
-  </AllTags>
+    <string>LisworthBay</string>
+    <string>SystonModelRailway</string>
+    <string>SouthgateDmu</string>
+    <string>NewtonEast</string>
+    <string>NetherwoodSidings</string>
+    <string>TudwickRoadSidings</string>
+    <string>Myton</string>
+    <string>PowerStation</string>
+    <string>HeathGreen</string>
+    <string>TennisCourtSidings</string>
+    <string>KarolinaFalls</string>
+    <string>HarrowbyHillMPD</string>
+  </Tags>
 </LocationTagHolderServices>

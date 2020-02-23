@@ -208,6 +208,10 @@ namespace eWolfMetaImage
             groupTags = new GroupTags("D3690,Class08");
             groupTags.Add("D3690");
             groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("10119,Class10");
+            groupTags.Add("10119");
+            groupHolder.GroupTagCollection.Add(groupTags);
         }
 
         private void PopulateTagData()
@@ -245,16 +249,19 @@ namespace eWolfMetaImage
 
         private void SaveCurrentImage(ImageDetails item)
         {
-            if (item == null)
-                return;
+            try
+            {
+                if (item == null)
+                    return;
 
-            if (!item.Modifiy)
-                return;
+                if (!item.Modifiy)
+                    return;
 
-            string newPath = item.NewPath;
-            string oldPath = item.FilePath;
-            File.Move(oldPath, newPath);
-
+                string newPath = item.NewPath;
+                string oldPath = item.FilePath;
+                File.Move(oldPath, newPath);
+            }
+            catch { }
             item.Update();
         }
 

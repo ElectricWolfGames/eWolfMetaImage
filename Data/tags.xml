@@ -2,42 +2,34 @@
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Modifyed>true</Modifyed>
   <Tags>
-    <string>45305</string>
-    <string>48305</string>
-    <string>92214</string>
-    <string>6990</string>
-    <string>50017</string>
-    <string>Class08</string>
-    <string>DMU</string>
-    <string>92214,LeicesterCity,Class9F,2-10-0</string>
-    <string>6990,WitherslackHall,4-6-0</string>
-    <string>47406,Jinty,Class3F,0-6-0</string>
-    <string>D123,LeicestershireAndDerbyshireYeomanry</string>
     <string />
-    <string>GCR</string>
-    <string>Butterly</string>
-    <string>NewTags</string>
-    <string>NewTagsas</string>
-    <string>Other</string>
-    <string>Othersdf</string>
-    <string>SomeWordWithSpaces</string>
-    <string>LocationTag</string>
-    <string>LocationOtherTag</string>
-    <string>78018,BRStandardClass2,2-6-0</string>
-    <string>MetroCammellDieselRailcar</string>
-    <string>Track</string>
-    <string>13101</string>
-    <string>48624</string>
-    <string>73156</string>
-    <string>LeicesterNorth</string>
-    <string>D6535</string>
-    <string>Rothley</string>
-    <string>Wagon</string>
-    <string>QuornAndWoodhouse</string>
     <string>08694</string>
-    <string>D3690</string>
-    <string>46521</string>
+    <string>10119,Class10</string>
     <string>13101,Clas08</string>
+    <string>45305</string>
+    <string>46521</string>
+    <string>47406,Jinty,Class3F,0-6-0</string>
+    <string>48305</string>
+    <string>48624</string>
+    <string>50017</string>
+    <string>6990</string>
+    <string>6990,WitherslackHall,4-6-0</string>
+    <string>73156</string>
+    <string>78018,BRStandardClass2,2-6-0</string>
+    <string>92214</string>
+    <string>92214,LeicesterCity,Class9F,2-10-0</string>
+    <string>Butterly</string>
+    <string>Class08</string>
+    <string>D123,LeicestershireAndDerbyshireYeomanry</string>
+    <string>D3690</string>
     <string>D3690,Class08</string>
+    <string>D6535</string>
+    <string>DMU</string>
+    <string>GCR</string>
+    <string>LeicesterNorth</string>
+    <string>QuornAndWoodhouse</string>
+    <string>Rothley</string>
+    <string>Track</string>
+    <string>Wagon</string>
   </Tags>
 </TagListHolders>

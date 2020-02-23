@@ -22,6 +22,7 @@ namespace eWolfMetaImage.Data
 
         public void TidyUp()
         {
+            _tags = _tags.OrderBy(x => x).ToList();
             _tags = _tags.Distinct().ToList();
         }
 
