@@ -12,9 +12,9 @@ namespace eWolfMetaImage
     public partial class SingleImage : Window
     {
         private string _allTagsSelection = string.Empty;
+        private TagListHolders _availableTags = new TagListHolders();
         private List<ImageDetails> _imageHolders = new List<ImageDetails>();
         private int _index = 0;
-        private TagListHolders _availableTags = new TagListHolders();
 
         public SingleImage()
         {
@@ -25,6 +25,31 @@ namespace eWolfMetaImage
 
             PopulateGroupData();
             PopulateTagData();
+        }
+
+        private void AllTag_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox comboBox = sender as ComboBox;
+            _allTagsSelection = (string)comboBox.SelectedItem;
+        }
+
+        private void ApplyAllTagsToList()
+        {
+            TagList.Items.Clear();
+            foreach (string tagName in _availableTags.Tags)
+            {
+                TagList.Items.Add(tagName);
+            }
+        }
+
+        private void ApplyLocationTagsToList()
+        {
+            AllTag.Items.Clear();
+            var allTagHolder = LocationTagHolderServices.GetLocationTagHolderServices;
+            foreach (var atag in allTagHolder.Tags)
+            {
+                AllTag.Items.Add(atag);
+            }
         }
 
         private void Button_AddLocationTagClick(object sender, RoutedEventArgs e)
@@ -47,42 +72,6 @@ namespace eWolfMetaImage
             _availableTags.TidyUp();
             ApplyAllTagsToList();
             _availableTags.Save();
-        }
-
-        private void AllTag_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ComboBox comboBox = sender as ComboBox;
-            _allTagsSelection = (string)comboBox.SelectedItem;
-        }
-
-        private void ApplyLocationTagsToList()
-        {
-            AllTag.Items.Clear();
-            var allTagHolder = LocationTagHolderServices.GetLocationTagHolderServices;
-            foreach (var atag in allTagHolder.Tags)
-            {
-                AllTag.Items.Add(atag);
-            }
-        }
-
-        private void ApplyAllTagsToList()
-        {
-            TagList.Items.Clear();
-            foreach (string tagName in _availableTags.Tags)
-            {
-                TagList.Items.Add(tagName);
-            }
-        }
-
-        private bool IsValid(int index)
-        {
-            if (_imageHolders.Count < index)
-                return false;
-
-            if (index < 0)
-                return false;
-
-            return true;
         }
 
         private void Button_ClearTags(object sender, RoutedEventArgs e)
@@ -126,7 +115,7 @@ namespace eWolfMetaImage
                 _imageHolders.Add(imageDetails);
             }
 
-            _index = 0;
+            ClearAllSetting();
             ShowImage();
         }
 
@@ -167,10 +156,27 @@ namespace eWolfMetaImage
             tagHolder.AddTag(_allTagsSelection);
         }
 
+        private void ClearAllSetting()
+        {
+            _index = 0;
+            _allTagsSelection = string.Empty;
+        }
+
         private string[] GetAllImages()
         {
             string[] files = Directory.GetFiles(ImageFolder.Text, "*.jpg", SearchOption.AllDirectories);
             return files;
+        }
+
+        private bool IsValid(int index)
+        {
+            if (_imageHolders.Count < index)
+                return false;
+
+            if (index < 0)
+                return false;
+
+            return true;
         }
 
         private void PopulateGroupData()
