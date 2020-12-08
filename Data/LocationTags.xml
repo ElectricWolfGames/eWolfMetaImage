@@ -2,6 +2,15 @@
 <LocationTagHolderServices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Modifyed>false</Modifyed>
   <Tags>
+    <string>Barrow-upon-Soar</string>
+    <string>Brookfield</string>
     <string>GCR</string>
+    <string>Glenellen</string>
+    <string>Ilkeston</string>
+    <string>MalcolmHughesVintageTrains</string>
+    <string>PoplarSidings</string>
+    <string>Rothbury</string>
+    <string>TheOutwoods</string>
+    <string>WinterAndSummer</string>
   </Tags>
 </LocationTagHolderServices>

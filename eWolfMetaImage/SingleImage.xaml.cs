@@ -189,6 +189,10 @@ namespace eWolfMetaImage
             groupTags.AddClearTags("Class9F");
             groupHolder.GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("48305,LMS,Class8F,2-8-0");
+            groupTags.Add("48305");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("6990,WitherslackHall,4-6-0");
             groupTags.Add("6990");
             groupTags.AddClearTags("WitherslackHall");
@@ -217,6 +221,46 @@ namespace eWolfMetaImage
 
             groupTags = new GroupTags("10119,Class10");
             groupTags.Add("10119");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D7535,Class25,Mercury");
+            groupTags.Add("D7535");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("73156,BRStandardClass5,4-6-0");
+            groupTags.Add("73156");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("12077,Class11");
+            groupTags.Add("12077");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("08694,Class08");
+            groupTags.Add("08694");
+            groupTags.AddClearTags("Class08");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("926,Repton,4-4-0,SchoolsClass");
+            groupTags.Add("Repton");
+            groupTags.AddClearTags("926");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D8098,Class20");
+            groupTags.Add("D8098");
+            groupTags.AddClearTags("Class20");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D4137,Class08");
+            groupTags.Add("D4137");
+            groupTags.AddClearTags("Class08");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("45305,Alderman_A_E_Draper,4-6-0,LMSClass5");
+            groupTags.Add("45305");
+            groupHolder.GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("48305,2-8-0,LMSClass8");
+            groupTags.Add("48305");
             groupHolder.GroupTagCollection.Add(groupTags);
         }
 

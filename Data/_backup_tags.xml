@@ -3,33 +3,81 @@
   <Modifyed>true</Modifyed>
   <Tags>
     <string />
+    <string>08590</string>
     <string>08694</string>
+    <string>08694,Class08</string>
     <string>10119,Class10</string>
+    <string>12077</string>
+    <string>12077,Class11</string>
     <string>13101,Clas08</string>
+    <string>1705</string>
+    <string>37714</string>
     <string>45305</string>
+    <string>45305,Alderman_A_E_Draper,4-6-0,LMSClass5</string>
     <string>46521</string>
+    <string>47401</string>
     <string>47406,Jinty,Class3F,0-6-0</string>
     <string>48305</string>
+    <string>48305,2-8-0,LMSClass8</string>
+    <string>48305,LMS,Class8F,2-8-0</string>
     <string>48624</string>
     <string>50017</string>
     <string>6990</string>
     <string>6990,WitherslackHall,4-6-0</string>
     <string>73156</string>
+    <string>73156,BRStandardClass5,4-6-0</string>
     <string>78018,BRStandardClass2,2-6-0</string>
     <string>92214</string>
     <string>92214,LeicesterCity,Class9F,2-10-0</string>
+    <string>926,Repton,4-4-0,SchoolsClass</string>
+    <string>Avyn-A-Llyin</string>
+    <string>Barrow-upon-Soar</string>
+    <string>BrakeVan</string>
+    <string>Bridge</string>
+    <string>Brookfield</string>
     <string>Butterly</string>
+    <string>Cat</string>
     <string>Class08</string>
+    <string>Class101</string>
+    <string>Coach</string>
+    <string>Crane</string>
     <string>D123,LeicestershireAndDerbyshireYeomanry</string>
     <string>D3690</string>
     <string>D3690,Class08</string>
+    <string>D4137</string>
+    <string>D4137,Class08</string>
     <string>D6535</string>
+    <string>D7535</string>
+    <string>D7535,Class25,Mercury</string>
+    <string>D8098,Class20</string>
+    <string>D8590</string>
+    <string>Diesel</string>
     <string>DMU</string>
+    <string>E50266</string>
     <string>GCR</string>
+    <string>Glenellen</string>
+    <string>GradientSign</string>
+    <string>ICIHopperWagons</string>
+    <string>Ilkeston</string>
     <string>LeicesterNorth</string>
+    <string>Loughborough</string>
+    <string>MalcolmHughesVintageTrains</string>
+    <string>Neuburg</string>
+    <string>PoplarSidings</string>
     <string>QuornAndWoodhouse</string>
+    <string>Rothbury</string>
     <string>Rothley</string>
+    <string>Ruston</string>
+    <string>Signals</string>
+    <string>SingnalBox</string>
+    <string>Station</string>
+    <string>SteamEngine</string>
+    <string>TheOutwoods</string>
+    <string>ThomasTheTankLayout</string>
     <string>Track</string>
+    <string>TractionEngine</string>
     <string>Wagon</string>
+    <string>WinterAndSummer</string>
+    <string>Yard</string>
   </Tags>
 </TagListHolders>
