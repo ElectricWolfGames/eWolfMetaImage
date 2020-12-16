@@ -2,6 +2,6 @@
 {
     public static class Consts
     {
-        public const string WorkFolder = @"C:\GitHub\eWolfMetaImage\Data\";
+        public const string WorkFolder = @"D:\Projects\GitHub\eWolfMetaImage\Data\";
     }
 }
