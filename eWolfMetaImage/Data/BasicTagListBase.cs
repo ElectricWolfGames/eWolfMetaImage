@@ -2,59 +2,71 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Serialization;
 
 namespace eWolfMetaImage.Data
 {
     [Serializable]
+    [XmlRoot("BasicTagListBase")]
+    [XmlInclude(typeof(TagListSets))]
     public abstract class BasicTagListBase
     {
-        public string Set { get; set; } = "Default";
-        protected List<string> _tags { get; set; } = new List<string>();
-
-        protected Dictionary<string, List<string>> _tagSets { get; set; } = new Dictionary<string, List<string>>();
-
-        public bool Modifyed { get; set; }
-
         public BasicTagListBase()
         {
-            _tagSets.Add(Set, new List<string>());
         }
 
-        public void FixDefaultSet()
+        public TagListSets GetTagHolder
         {
-            foreach (string tag in _tags)
+            get
             {
-                Add(tag);
+                CreateSet();
+                return TagSets.First(x => x.Set == Set);
             }
         }
 
+        [XmlIgnore]
+        public bool Modifyed { get; set; }
+
+        public string Set { get; set; }
+
+        [XmlIgnore]
         public List<string> Tags
         {
             get
             {
                 CreateSet();
-                return _tagSets[Set];
+                return TagSets.First(x => x.Set == Set).SetTags;
+            }
+        }
+
+        [XmlArrayItem("TagSetsLists")]
+        public List<TagListSets> TagSets { get; set; } = new List<TagListSets>();
+
+        public void Add(string tag)
+        {
+            var tagHolderSet = GetTagHolder;
+            tagHolderSet.SetTags.Add(TagHelper.MakePascalCase(tag));
+        }
+
+        public void CreateSet()
+        {
+            if (!TagSets.Any(x => x.Set == Set))
+            {
+                TagListSets tls = new TagListSets
+                {
+                    Set = Set
+                };
+                TagSets.Add(tls);
             }
         }
 
         public void TidyUp()
         {
-            _tagSets[Set] = _tagSets[Set].OrderBy(x => x).ToList();
-            _tagSets[Set] = _tagSets[Set].Distinct().ToList();
-        }
-
-        public void CreateSet()
-        {
-            if (!_tagSets.TryGetValue(Set, out _))
+            foreach (var tagSet in TagSets)
             {
-                _tagSets.Add(Set, new List<string>());
+                tagSet.SetTags = tagSet.SetTags.OrderBy(x => x).ToList();
+                tagSet.SetTags = tagSet.SetTags.Distinct().ToList();
             }
-        }
-
-        public void Add(string tag)
-        {
-            CreateSet();
-            _tagSets[Set].Add(TagHelper.MakePascalCase(tag));
         }
     }
 }

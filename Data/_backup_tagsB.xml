@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Modifyed>true</Modifyed>
-  <Set>GCR</Set>
+  <Modifyed>false</Modifyed>
+  <Set>Home</Set>
   <Tags>
-    <string>Class08</string>
-    <string>Class20</string>
+    <string>Garden</string>
+    <string>Misty</string>
   </Tags>
 </TagListHolders>

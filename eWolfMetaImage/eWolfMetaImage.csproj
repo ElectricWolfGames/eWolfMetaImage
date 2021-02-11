@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Configuration\Consts.cs" />
     <Compile Include="Data\BasicTagListBase.cs" />
+    <Compile Include="Data\TagListSets.cs" />
     <Compile Include="Services\GroupTagsHolderService.cs" />
     <Compile Include="Services\LocationTagHolderServices.cs" />
     <Compile Include="Data\ImageDetails.cs" />

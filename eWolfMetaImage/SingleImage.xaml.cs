@@ -28,6 +28,8 @@ namespace eWolfMetaImage
 
             NamingSets.Items.Add("Default");
             NamingSets.Items.Add("Home");
+            NamingSets.Items.Add("GCR");
+            NamingSets.Items.Add("ModelsLayouts");
         }
 
         private void AllTag_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -184,7 +186,8 @@ namespace eWolfMetaImage
 
         private void NamingSets_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            _availableTags.Set = NamingSets.SelectedValue.ToString(); ApplyAllTagsToList();
+            _availableTags.Set = NamingSets.SelectedValue.ToString();
+            ApplyAllTagsToList();
         }
 
         private void PopulateGroupData()
@@ -196,9 +199,9 @@ namespace eWolfMetaImage
         private void PopulateTagData()
         {
             _availableTags = TagListHolders.Load();
-            _availableTags.FixDefaultSet();
 
-            var groupHolder = GroupTagsHolderService.GetGroupTagsHolder;
+            _availableTags.Set = "Default";
+            /*var groupHolder = GroupTagsHolderService.GetGroupTagsHolder;
             foreach (var group in groupHolder.GroupTagCollection)
             {
                 _availableTags.Add(group.MasterTag);
@@ -210,7 +213,7 @@ namespace eWolfMetaImage
             foreach (var atag in allTagHolder.Tags)
             {
                 _availableTags.Add(atag);
-            }
+            }*/
 
             _availableTags.TidyUp();
             ApplyAllTagsToList();

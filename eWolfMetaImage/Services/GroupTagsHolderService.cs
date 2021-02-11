@@ -97,6 +97,10 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("48305,2-8-0,LMSClass8");
             groupTags.Add("48305");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("46521,2-6-0,LMSClass2");
+            groupTags.Add("46521");
+            GroupTagCollection.Add(groupTags);
         }
     }
 }

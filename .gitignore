@@ -15,3 +15,6 @@
 /eWolfTagSystem/eWolfTagHolders/bin/Debug/netstandard2.0
 /eWolfTagSystem/eWolfTagHolders/obj
 /packages
+/eWolfMetaTaggerCommon/obj
+/eWolfMetaTaggerCommon.UnitTests/obj/Debug/netcoreapp3.1
+/eWolfMetaTaggerCommon.UnitTests/obj

@@ -8,7 +8,7 @@ namespace eWolfMetaImage.Data
     [Serializable]
     public class TagListHolders : BasicTagListBase
     {
-        public static string GetFileName { get; } = "tags.xml";
+        public static string GetFileName { get; } = "TagsStore.xml";
 
         public void Save()
         {
