@@ -18,3 +18,5 @@
 /eWolfMetaTaggerCommon/obj
 /eWolfMetaTaggerCommon.UnitTests/obj/Debug/netcoreapp3.1
 /eWolfMetaTaggerCommon.UnitTests/obj
+/eWolfMetaTaggerCommon/bin/Debug/netcoreapp3.1
+/eWolfMetaTaggerCommon.UnitTests/bin/Debug/netcoreapp3.1

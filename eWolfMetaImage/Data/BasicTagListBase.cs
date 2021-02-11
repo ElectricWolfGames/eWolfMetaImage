@@ -46,6 +46,7 @@ namespace eWolfMetaImage.Data
         {
             var tagHolderSet = GetTagHolder;
             tagHolderSet.SetTags.Add(TagHelper.MakePascalCase(tag));
+            TidyUp();
         }
 
         public void CreateSet()
