@@ -1,9 +1,6 @@
 ﻿using eWolfMetaTaggerCommon.TagData;
 using FluentAssertions;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace eWolfMetaTaggerCommon.UnitTests.TagData
 {

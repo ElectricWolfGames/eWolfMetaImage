@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Set>GCR</Set>
+  <Set>Default</Set>
   <TagSets>
     <TagSetsLists>
       <SetTags />
@@ -8,17 +8,36 @@
     </TagSetsLists>
     <TagSetsLists>
       <SetTags>
+        <string>Brook</string>
+        <string>Canal</string>
+        <string>Fox</string>
         <string>Garden</string>
+        <string>Horse</string>
         <string>Leo</string>
+        <string>LittleEgret</string>
+        <string>Magpie</string>
         <string>Misty</string>
+        <string>Moorhan</string>
+        <string>Pigeon</string>
+        <string>Snow</string>
+        <string>Squirrel</string>
+        <string>Starfish</string>
+        <string>Sunraise</string>
+        <string>Tree</string>
         <string>Tyson</string>
       </SetTags>
       <Set>Home</Set>
     </TagSetsLists>
     <TagSetsLists>
       <SetTags>
+        <string>68067</string>
+        <string>6990</string>
+        <string>92214</string>
         <string>Class08</string>
         <string>Class20</string>
+        <string>LoughboroughSignalBox</string>
+        <string>LoughboroughStation</string>
+        <string>LovattHouse</string>
       </SetTags>
       <Set>GCR</Set>
     </TagSetsLists>

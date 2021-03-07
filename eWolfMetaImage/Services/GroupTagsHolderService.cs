@@ -101,6 +101,10 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("46521,2-6-0,LMSClass2");
             groupTags.Add("46521");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("68067,0-6-0,Austerity");
+            groupTags.Add("68067");
+            GroupTagCollection.Add(groupTags);
         }
     }
 }
