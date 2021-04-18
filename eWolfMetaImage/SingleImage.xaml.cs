@@ -1,6 +1,7 @@
 ﻿using eWolfMetaImage.Data;
 using eWolfTagHolders.Services;
 using eWolfTagHolders.Tags;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows;
@@ -26,10 +27,16 @@ namespace eWolfMetaImage
             PopulateGroupData();
             PopulateTagData();
 
+            DateTime dt = DateTime.Now;
+            Date.Text = dt.ToString("yyyy-MM-dd");
+
             NamingSets.Items.Add("Default");
             NamingSets.Items.Add("Home");
             NamingSets.Items.Add("GCR");
             NamingSets.Items.Add("ModelsLayouts");
+            NamingSets.Items.Add("Cattington");
+
+            ApplyLocationTagsToList();
         }
 
         private void AllTag_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -148,6 +155,19 @@ namespace eWolfMetaImage
             for (int i = 0; i < _imageHolders.Count; i++)
             {
                 CheckImageTag(_imageHolders[i]);
+                SaveCurrentImage(_imageHolders[i]);
+            }
+        }
+
+        private void Button_UpdateDateTags(object sender, RoutedEventArgs e)
+        {
+            string dt = Date.Text;
+
+            for (int i = 0; i < _imageHolders.Count; i++)
+            {
+                _imageHolders[i].TagHolder.AddTag(dt);
+                CheckImageTag(_imageHolders[i]);
+
                 SaveCurrentImage(_imageHolders[i]);
             }
         }

@@ -4,6 +4,8 @@
   <TagSets>
     <TagSetsLists>
       <SetTags>
+        <string>Cattington</string>
+        <string>GCR</string>
         <string>Home</string>
       </SetTags>
       <Set>Default</Set>

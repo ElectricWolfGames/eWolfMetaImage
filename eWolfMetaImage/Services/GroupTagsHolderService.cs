@@ -59,6 +59,7 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("D4137,Class08");
             groupTags.Add("D4137");
+            groupTags.Add("4137");
             groupTags.AddClearTags("Class08");
             GroupTagCollection.Add(groupTags);
 
