@@ -1,12 +1,14 @@
-﻿using eWolfCommon.Helpers;
-using eWolfTagHolders.Services;
-using System.IO;
+﻿using System.IO;
 using System.Xml.Serialization;
+using eWolfCommon.Helpers;
+using eWolfTagHolders.Services;
 
 namespace eWolfMetaImage.Data
 {
     public class LocationTagHolderServices : BasicTagListBase
     {
+        public static string GetFileName { get; } = "LocationTags.xml";
+
         public static LocationTagHolderServices GetLocationTagHolderServices
         {
             get
@@ -14,8 +16,6 @@ namespace eWolfMetaImage.Data
                 return ServiceLocator.Instance.GetService<LocationTagHolderServices>();
             }
         }
-
-        public static string GetFileName { get; } = "LocationTags.xml";
 
         public static LocationTagHolderServices Load()
         {
@@ -35,6 +35,11 @@ namespace eWolfMetaImage.Data
             return locationTagHolderServices;
         }
 
+        public void Save()
+        {
+            LocationTagHolderServices.Save(this);
+        }
+
         private static void Save(LocationTagHolderServices taglist)
         {
             FileHelper.CreateBackUp(Configuration.Consts.WorkFolder, GetFileName);
@@ -44,11 +49,6 @@ namespace eWolfMetaImage.Data
             {
                 xs.Serialize(tw, taglist);
             }
-        }
-
-        public void Save()
-        {
-            LocationTagHolderServices.Save(this);
         }
     }
 }

@@ -21,6 +21,16 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class9F");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("92134,Class9F,2-10-0");
+            groupTags.Add("92134");
+            groupTags.AddClearTags("Class9F");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("3802,Class2884,2-8-0");
+            groupTags.Add("3802");
+            groupTags.AddClearTags("Class2884");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("48305,LMS,Class8F,2-8-0");
             groupTags.Add("48305");
             GroupTagCollection.Add(groupTags);
@@ -32,11 +42,6 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("47406,Jinty,Class3F,0-6-0");
             groupTags.Add("47406");
-            GroupTagCollection.Add(groupTags);
-
-            groupTags = new GroupTags("D123,LeicestershireAndDerbyshireYeomanry");
-            groupTags.Add("D123");
-            groupTags.AddClearTags("LeicestershireAndDerbyshireYeomanry");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("73156,BRStandardClass5,4-6-0");
@@ -82,8 +87,25 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class20");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("D7535,Class25,Mercury");
-            groupTags.Add("D7535");
+            groupTags = new GroupTags("D5185,Class25,SulzerType2");
+            groupTags.Add("D5185");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("37714,Class37,CardiffCanton");
+            groupTags.Add("37714");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D123,Class45,LeicestershireAndDerbyshireYeomanry");
+            groupTags.Add("D123");
+            groupTags.AddClearTags("LeicestershireAndDerbyshireYeomanry");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("50017,Class50,RoyalOak ");
+            groupTags.Add("50017");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("55019,Class55,RoyalHighlandFusilier ");
+            groupTags.Add("55019");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("926,Repton,4-4-0,SchoolsClass");
@@ -105,6 +127,15 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("68067,0-6-0,Austerity");
             groupTags.Add("68067");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("08694,Class08");
+            groupTags.Add("08694");
+            groupTags.AddClearTags("Class08");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("8274,2-8-0,LMSClass8");
+            groupTags.Add("8274");
             GroupTagCollection.Add(groupTags);
         }
     }

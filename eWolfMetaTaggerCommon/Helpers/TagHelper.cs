@@ -7,19 +7,6 @@ namespace eWolfMetaTaggerCommon.Helpers
 {
     public static class TagHelper
     {
-        public static string[] GetTagsFromName(string name)
-        {
-            string[] parts = name.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            List<string> trimmedParts = new List<string>();
-
-            foreach (string part in parts)
-            {
-                trimmedParts.Add(part.Trim());
-            }
-
-            return trimmedParts.ToArray();
-        }
-
         public static string CreateFileNameFromTags(string[] parts)
         {
             return CreateFileNameFromTags(parts, " ");
@@ -44,6 +31,19 @@ namespace eWolfMetaTaggerCommon.Helpers
 
             words.Insert(0, parts[0]);
             return string.Join(delimitor, words);
+        }
+
+        public static string[] GetTagsFromName(string name)
+        {
+            string[] parts = name.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            List<string> trimmedParts = new List<string>();
+
+            foreach (string part in parts)
+            {
+                trimmedParts.Add(part.Trim());
+            }
+
+            return trimmedParts.ToArray();
         }
 
         public static string MakePascalCase(string line)

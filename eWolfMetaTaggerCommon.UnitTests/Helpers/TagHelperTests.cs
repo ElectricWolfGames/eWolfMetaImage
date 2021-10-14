@@ -6,6 +6,14 @@ namespace eWolfMetaTaggerCommon.UnitTests.Helpers
 {
     public class TagHelperTests
     {
+        [TestCase("0123", "a", "d", "0123 A D")]
+        [TestCase("0123", "PartOfWords", "a", "0123 A PartOfWords")]
+        public void ShouldCreateFileName(string partA, string partB, string partC, string expected)
+        {
+            string[] words = new string[] { partA, partB, partC };
+            TagHelper.CreateFileNameFromTags(words).Should().Be(expected);
+        }
+
         [TestCase("Name", "Name")]
         [TestCase("Name ", "Name")]
         [TestCase("Name Test Split", "Name", "Test", "Split")]
@@ -28,14 +36,6 @@ namespace eWolfMetaTaggerCommon.UnitTests.Helpers
         public void ShouldMakePascalCase(string line, string expectedLine)
         {
             TagHelper.MakePascalCase(line).Should().Be(expectedLine);
-        }
-
-        [TestCase("0123", "a", "d", "0123 A D")]
-        [TestCase("0123", "PartOfWords", "a", "0123 A PartOfWords")]
-        public void ShouldCreateFileName(string partA, string partB, string partC, string expected)
-        {
-            string[] words = new string[] { partA, partB, partC };
-            TagHelper.CreateFileNameFromTags(words).Should().Be(expected);
         }
     }
 }

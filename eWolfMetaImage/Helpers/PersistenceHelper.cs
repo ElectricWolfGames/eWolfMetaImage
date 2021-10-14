@@ -7,6 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace eWolfMetaImage.Helpers
 {
+
     public class PersistenceHelper<T>
     {
         private readonly string _outputFolder;
@@ -89,6 +90,12 @@ namespace eWolfMetaImage.Helpers
             return true;
         }
 
+        internal void DeleteFile(ISaveable saveable)
+        {
+            string outputFileName = Path.Combine(_outputFolder, saveable.GetFileName);
+            File.Delete(outputFileName);
+        }
+
         private static bool SaveToStream(Stream stream, IFormatter formatter, object objectToSave)
         {
             try
@@ -101,29 +108,5 @@ namespace eWolfMetaImage.Helpers
                 return false;
             }
         }
-
-        internal void DeleteFile(ISaveable saveable)
-        {
-            string outputFileName = Path.Combine(_outputFolder, saveable.GetFileName);
-            File.Delete(outputFileName);
-        }
-    }
-
-    public static class StreamFactory
-    {
-        public static Stream GetStream(string outputName)
-        {
-            Stream stream = null;
-            stream = new FileStream(outputName, FileMode.Create, FileAccess.Write, FileShare.None);
-
-            return stream;
-        }
-    }
-
-    public interface ISaveable
-    {
-        string GetFileName { get; }
-
-        bool Modifyed { get; set; }
     }
 }

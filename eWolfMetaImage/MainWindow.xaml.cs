@@ -1,7 +1,7 @@
-﻿using eWolfMetaImage.UserControls;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Windows;
+using eWolfMetaImage.UserControls;
 
 namespace eWolfMetaImage
 {

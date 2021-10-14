@@ -58,6 +58,8 @@
     <Compile Include="Configuration\Consts.cs" />
     <Compile Include="Data\BasicTagListBase.cs" />
     <Compile Include="Data\TagListSets.cs" />
+    <Compile Include="Helpers\ISaveable.cs" />
+    <Compile Include="Helpers\StreamFactory.cs" />
     <Compile Include="Services\GroupTagsHolderService.cs" />
     <Compile Include="Services\LocationTagHolderServices.cs" />
     <Compile Include="Data\ImageDetails.cs" />

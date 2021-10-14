@@ -8,7 +8,7 @@ namespace eWolfMetaImage.Data
     [XmlRoot("TagListSets")]
     public class TagListSets
     {
-        public List<string> SetTags { get; set; } = new List<string>();
         public string Set { get; set; }
+        public List<string> SetTags { get; set; } = new List<string>();
     }
 }

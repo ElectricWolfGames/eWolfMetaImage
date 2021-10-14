@@ -1,8 +1,8 @@
-﻿using eWolfMetaTaggerCommon.Helpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Serialization;
+using eWolfMetaTaggerCommon.Helpers;
 
 namespace eWolfMetaTaggerCommon.TagData
 {
