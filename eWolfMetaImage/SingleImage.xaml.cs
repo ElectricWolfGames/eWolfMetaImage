@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -10,12 +12,33 @@ using eWolfTagHolders.Tags;
 
 namespace eWolfMetaImage
 {
-    public partial class SingleImage : Window
+    public partial class SingleImage : Window, INotifyPropertyChanged
     {
         private string _allTagsSelection = string.Empty;
         private TagListHolders _availableTags = new TagListHolders();
         private List<ImageDetails> _imageHolders = new List<ImageDetails>();
         private int _index = 0;
+        private string _videoFileName;
+
+        public string VideoFileNameToPlay
+        {
+            get
+            {
+                return _videoFileName;
+            }
+            set
+            {
+                _videoFileName = value;
+                OnPropertyChanged("VideoFileNameToPlay");
+            }
+        }
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            handler?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+
 
         public SingleImage()
         {
@@ -37,8 +60,14 @@ namespace eWolfMetaImage
             NamingSets.Items.Add("Cattington");
 
             ApplyLocationTagsToList();
-        }
 
+            mePlayer.MediaEnded += MePlayer_MediaEnded;
+        }
+        private void MePlayer_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            //_videoTaggerViewModel.SetNextVideo(pathField.Text);
+            //ShowNextVideoDetails();
+        }
         private void AllTag_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ComboBox comboBox = sender as ComboBox;
@@ -189,7 +218,9 @@ namespace eWolfMetaImage
 
         private string[] GetAllImages()
         {
-            string[] files = Directory.GetFiles(ImageFolder.Text, "*.jpg", SearchOption.AllDirectories);
+            // string[] files = Directory.GetFiles(ImageFolder.Text, "*.jpg;*.mov", SearchOption.AllDirectories);
+            string[] files = Directory.EnumerateFiles(ImageFolder.Text, "*.*", SearchOption.AllDirectories)
+                    .Where(s => s.EndsWith(".jpg") || s.EndsWith(".MOV")).ToArray();
             return files;
         }
 
@@ -245,7 +276,9 @@ namespace eWolfMetaImage
             if (!IsValid(_index))
                 return;
 
-            Image.Source = null;
+            ShowImageUI.Source = null;
+            if (_imageHolders.Count == 0)
+                return;
 
             SaveCurrentImage(_imageHolders[_index]);
         }
@@ -278,6 +311,20 @@ namespace eWolfMetaImage
             string filename = _imageHolders[_index].FilePath;
             NewFileName.Content = _imageHolders[_index].DisplayTags;
 
+            if (filename.EndsWith(".MOV"))
+            {
+                ShowImageUI.Source = null;
+                mePlayer.Source = new Uri(filename);
+                mePlayer.Play();
+                mePlayer.IsEnabled = true;
+                return;
+            }
+            else
+            {
+                mePlayer.Stop();
+                mePlayer.IsEnabled = false;
+            }
+
             MemoryStream ms = new MemoryStream();
             BitmapImage bi = new BitmapImage();
             byte[] bytArray = File.ReadAllBytes(filename);
@@ -285,7 +332,7 @@ namespace eWolfMetaImage
             bi.BeginInit();
             bi.StreamSource = ms;
             bi.EndInit();
-            Image.Source = bi;
+            ShowImageUI.Source = bi;
         }
 
         private void TagList_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)

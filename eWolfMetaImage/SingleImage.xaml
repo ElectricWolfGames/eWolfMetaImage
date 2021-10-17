@@ -18,7 +18,6 @@
                 <ColumnDefinition Width="300" />
             </Grid.ColumnDefinitions>
             <ListBox Name ="TagList" Grid.Column="2" Margin="5,238,10,65" MouseDoubleClick="TagList_MouseDoubleClick" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" Height="475" />
-            <Image Name ="Image" HorizontalAlignment="Left" Height="723" Margin="10,45,0,0" VerticalAlignment="Top" Width="958" />
             <Label Name ="NewFileName" Content="UpdateNameLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="566" />
             <ComboBox Name ="AllTag"  Grid.Column="2" HorizontalAlignment="Left" Margin="4,127,0,0" VerticalAlignment="Top" Width="210" SelectionChanged="AllTag_SelectionChanged" />
             <TextBox Name ="NewTagsToAdd" Grid.Column="2" HorizontalAlignment="Right" Height="23" Margin="0,210,63,0" TextWrapping="Wrap" Text="NewTags" VerticalAlignment="Top" Width="232" />
@@ -32,10 +31,15 @@
             <Label Content="Sets:" Grid.Column="2" HorizontalAlignment="Left" Margin="5,179,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" />
             <TextBox x:Name ="Date" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="5,154,0,0" TextWrapping="Wrap" Text="TagDate" VerticalAlignment="Top" Width="209" />
             <Button Content="Update Date" Grid.Column="2" HorizontalAlignment="Left" Margin="220,157,0,0" VerticalAlignment="Top" Width="70" Click="Button_UpdateDateTags" />
+            <MediaElement Grid.Column="0"
+                      LoadedBehavior="Manual"
+                      x:Name="mePlayer"
+                      Margin="0,45,10,65" />
+            <Image Name ="ShowImageUI" HorizontalAlignment="Left" Height="723" Margin="10,45,0,0" VerticalAlignment="Top" Width="998" />
         </Grid>
         <Label Content="Image Path" HorizontalAlignment="Left" Margin="40,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.987,0.519" Width="77" />
         <Button Content="Go" HorizontalAlignment="Left" Margin="665,10,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="-0.017,0.491" Click="Button_GetImages" />
-        <TextBox x:Name="ImageFolder" HorizontalAlignment="Left" Height="23" Margin="117,9,0,0" TextWrapping="Wrap" Text="D:\Personal\Pictures\_pic_Trains\" VerticalAlignment="Top" Width="543" />
+        <TextBox x:Name="ImageFolder" HorizontalAlignment="Left" Height="23" Margin="117,9,0,0" TextWrapping="Wrap" Text="D:\Trains\Photos - BackUp\2021\2021-10-10 Kirkby-in-ashfield\02 Cumanavago\" VerticalAlignment="Top" Width="543" />
         <Button Content="Next" HorizontalAlignment="Left" Margin="1202,13,0,0" VerticalAlignment="Top" Width="95" Click="Button_NextClick" Grid.Row="1" Height="29" />
         <Button Content="Prev" HorizontalAlignment="Left" Margin="1059,13,0,0" VerticalAlignment="Top" Width="104" Click="Button_PrevClick" Grid.Row="1" Height="29" />
         <Button Content="ClearTags" HorizontalAlignment="Left" Margin="1059,48,0,0" VerticalAlignment="Top" Width="75" Click="Button_ClearTags" Grid.Row="1" />
