@@ -26,6 +26,10 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class9F");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("D6535,Class33");
+            groupTags.Add("D6535");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("3802,Class2884,2-8-0");
             groupTags.Add("3802");
             groupTags.AddClearTags("Class2884");
@@ -73,6 +77,11 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class08");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("08784,Class08");
+            groupTags.Add("08784");
+            groupTags.AddClearTags("Class08");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("10119,Class10");
             groupTags.Add("10119");
             groupTags.AddClearTags("Class10");
@@ -93,6 +102,10 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("37714,Class37,CardiffCanton");
             groupTags.Add("37714");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("37009,Class37");
+            groupTags.Add("37009");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("D123,Class45,LeicestershireAndDerbyshireYeomanry");
@@ -117,7 +130,7 @@ namespace eWolfMetaImage.Data
             groupTags.Add("45305");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("48305,2-8-0,LMSClass8");
+            groupTags = new GroupTags("48305,2-8-0,LMSClass8F");
             groupTags.Add("48305");
             GroupTagCollection.Add(groupTags);
 
@@ -134,8 +147,32 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class08");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("08220,Class08");
+            groupTags.Add("08220");
+            groupTags.AddClearTags("Class08");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("8274,2-8-0,LMSClass8");
             groupTags.Add("8274");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("60163,Class A1,LNER Peppercorn,Tornado");
+            groupTags.Add("60163");
+            groupTags.Add("Tornado");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("34072,Battle of Britain,257 Squadron,4-6-2");
+            groupTags.Add("34072");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("80080,BRStandard 4MT,2-6-4T");
+            groupTags.Add("80080");
+            GroupTagCollection.Add(groupTags);
+
+
+            groupTags = new GroupTags("43044,Class43,HST");
+            groupTags.Add("43044");
+            groupTags.AddClearTags("Class43");
             GroupTagCollection.Add(groupTags);
         }
     }

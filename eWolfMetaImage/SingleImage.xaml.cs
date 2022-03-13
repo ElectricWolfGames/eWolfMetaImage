@@ -220,7 +220,7 @@ namespace eWolfMetaImage
         {
             // string[] files = Directory.GetFiles(ImageFolder.Text, "*.jpg;*.mov", SearchOption.AllDirectories);
             string[] files = Directory.EnumerateFiles(ImageFolder.Text, "*.*", SearchOption.AllDirectories)
-                    .Where(s => s.EndsWith(".jpg") || s.EndsWith(".MOV")).ToArray();
+                    .Where(s => s.ToUpper().EndsWith(".JPG") || s.ToUpper().EndsWith(".MOV")).ToArray();
             return files;
         }
 
@@ -313,10 +313,15 @@ namespace eWolfMetaImage
 
             if (filename.EndsWith(".MOV"))
             {
-                ShowImageUI.Source = null;
-                mePlayer.Source = new Uri(filename);
-                mePlayer.Play();
-                mePlayer.IsEnabled = true;
+                var uri = new Uri(filename);
+                if (mePlayer.Source?.LocalPath != uri.LocalPath)
+                {
+                    ShowImageUI.Source = null;
+                    mePlayer.Source = uri;
+                    mePlayer.Play();
+                    mePlayer.IsEnabled = true;
+                }
+                    
                 return;
             }
             else

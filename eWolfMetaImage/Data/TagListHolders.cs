@@ -36,11 +36,15 @@ namespace eWolfMetaImage.Data
         {
             FileHelper.CreateBackUp(Configuration.Consts.WorkFolder, GetFileName);
 
-            XmlSerializer xs = new XmlSerializer(typeof(TagListHolders));
-            using (TextWriter tw = new StreamWriter(filename))
+            try
             {
-                xs.Serialize(tw, taglist);
+                XmlSerializer xs = new XmlSerializer(typeof(TagListHolders));
+                using (TextWriter tw = new StreamWriter(filename))
+                {
+                    xs.Serialize(tw, taglist);
+                }
             }
+            catch { }
         }
     }
 }
