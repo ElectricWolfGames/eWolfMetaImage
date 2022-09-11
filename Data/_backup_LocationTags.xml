@@ -3,12 +3,21 @@
   <Set>Default</Set>
   <TagSets>
     <TagSetsLists>
-      <SetTags>
-        <string>Cattington</string>
-        <string>GCR</string>
-        <string>Home</string>
-      </SetTags>
       <Set>Default</Set>
+      <SetTags>
+        <string>BattlefieldLine</string>
+        <string>Cattington</string>
+        <string>Fawley</string>
+        <string>GCR</string>
+        <string>GCRN</string>
+        <string>HinckleyModelShow</string>
+        <string>Home</string>
+        <string>Kirkby-in-ashfield</string>
+        <string>LocationTag</string>
+        <string>London</string>
+        <string>Mountsorrel</string>
+        <string>RushcliffeHalt</string>
+      </SetTags>
     </TagSetsLists>
   </TagSets>
 </LocationTagHolderServices>

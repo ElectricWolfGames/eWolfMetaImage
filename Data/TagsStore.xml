@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Set>Default</Set>
+  <Set>GCR</Set>
   <TagSets>
     <TagSetsLists>
-      <SetTags />
       <Set>Default</Set>
+      <SetTags>
+        <string>Brush</string>
+        <string>Class156</string>
+        <string>Class170</string>
+        <string>LoughboroughStation</string>
+        <string>Track</string>
+      </SetTags>
     </TagSetsLists>
     <TagSetsLists>
+      <Set>Home</Set>
       <SetTags>
         <string>Barge</string>
         <string>Bridge</string>
         <string>Brook</string>
         <string>Canal</string>
+        <string>Cat</string>
         <string>Chaffinch</string>
         <string>Desk</string>
         <string>Fox</string>
         <string>Garden</string>
         <string>Helicopter</string>
+        <string>Heron</string>
         <string>Horse</string>
         <string>Leo</string>
         <string>LittleEgret</string>
@@ -26,59 +35,239 @@
         <string>Moorhan</string>
         <string>Pheasant</string>
         <string>Pigeon</string>
+        <string>Preci-Spark</string>
+        <string>Rabbit</string>
         <string>Sky</string>
         <string>Smoke</string>
         <string>Snow</string>
         <string>Squirrel</string>
         <string>Starfish</string>
         <string>Sunraise</string>
+        <string>Swan</string>
         <string>Tree</string>
         <string>Tyson</string>
       </SetTags>
-      <Set>Home</Set>
     </TagSetsLists>
     <TagSetsLists>
+      <Set>GCR</Set>
       <SetTags>
+        <string>08114</string>
+        <string>08220</string>
+        <string>08694</string>
+        <string>08706</string>
+        <string>08784</string>
+        <string>08922</string>
+        <string>10119</string>
+        <string>12083</string>
+        <string>13101</string>
+        <string>33201</string>
+        <string>34072</string>
+        <string>37009</string>
+        <string>37714</string>
+        <string>3802</string>
         <string>4137</string>
+        <string>43044</string>
         <string>45305</string>
+        <string>46010</string>
+        <string>46521</string>
+        <string>47292</string>
+        <string>48305</string>
+        <string>50017</string>
+        <string>50203</string>
+        <string>5209</string>
+        <string>55009</string>
+        <string>55019</string>
+        <string>55826</string>
+        <string>63601</string>
         <string>68067</string>
         <string>6990</string>
         <string>73156</string>
         <string>78018</string>
+        <string>78019</string>
+        <string>80080</string>
+        <string>82306</string>
+        <string>8274</string>
+        <string>92134</string>
         <string>92214</string>
+        <string>A60Bridge326</string>
+        <string>AndyFillingham</string>
+        <string>Animals</string>
+        <string>B784409</string>
+        <string>BarryLycett</string>
+        <string>Beavertail</string>
+        <string>Bike</string>
+        <string>Bikes</string>
+        <string>BreakCoach</string>
         <string>BreakVan</string>
+        <string>B-Roll</string>
+        <string>BunnyMine</string>
+        <string>Bus</string>
         <string>CanalBridge</string>
+        <string>Car</string>
         <string>Cat</string>
         <string>Class08</string>
+        <string>Class10</string>
+        <string>Class101</string>
+        <string>Class144</string>
+        <string>Class158</string>
         <string>Class20</string>
+        <string>Class222</string>
+        <string>Class47</string>
+        <string>Class50</string>
+        <string>Class66</string>
+        <string>Coaches</string>
+        <string>Container</string>
+        <string>Crane</string>
+        <string>D123</string>
+        <string>D2120</string>
+        <string>D2867</string>
+        <string>D4067</string>
         <string>D4137</string>
+        <string>D5185</string>
+        <string>D5830</string>
+        <string>D6508</string>
+        <string>D6535</string>
+        <string>D6700</string>
+        <string>D8098</string>
+        <string>D8110</string>
+        <string>D8154</string>
+        <string>DavidPutts</string>
+        <string>DebbieGillott</string>
+        <string>Diesel</string>
         <string>DMU</string>
+        <string>E14064</string>
+        <string>E1719E</string>
+        <string>E51427</string>
+        <string>Event</string>
+        <string>FireEngine</string>
         <string>FoGCML</string>
+        <string>Funfair</string>
+        <string>GoodsVan</string>
+        <string>HopperWagons</string>
+        <string>HotchleyHill</string>
+        <string>KarlGillott</string>
+        <string>KenSimms</string>
+        <string>LancasterBomber</string>
+        <string>LeicesterNorth</string>
+        <string>LeicesterNorthStation</string>
+        <string>LeicestershireNorthStation</string>
         <string>LoughboroughSignalBox</string>
         <string>LoughboroughStation</string>
         <string>LovattHouse</string>
+        <string>M79900</string>
+        <string>Mainline</string>
+        <string>MarketBosworth</string>
+        <string>MetroCammellDieselRailcar</string>
+        <string>MidlandGeneral</string>
+        <string>ModelRailway</string>
+        <string>ModelTrain</string>
+        <string>NewTags</string>
+        <string>NickCreaton</string>
+        <string>No.419</string>
+        <string>No31</string>
+        <string>No419</string>
+        <string>NormanPannell</string>
+        <string>People</string>
+        <string>Points</string>
+        <string>Preci-Spark</string>
         <string>QuornStation</string>
+        <string>QuornYard</string>
+        <string>RothleySignalBox</string>
+        <string>RothleyStation</string>
+        <string>RuddingtonSignalBox</string>
+        <string>RushcliffeHalt</string>
+        <string>RushcliffeHaltStation</string>
+        <string>Ruston</string>
+        <string>Sentinel</string>
+        <string>ShackerstoneStation</string>
+        <string>Shed</string>
+        <string>ShentonStation</string>
         <string>Signal</string>
         <string>SignalBox</string>
+        <string>Singers</string>
+        <string>Smoke</string>
+        <string>Starfish</string>
+        <string>SteamEngine</string>
+        <string>Tanker</string>
+        <string>Tornado</string>
         <string>Tracks</string>
+        <string>TrackSide</string>
+        <string>Tractor</string>
+        <string>Volunteers</string>
         <string>Wagon</string>
+        <string>Wheels</string>
+        <string>Workmen</string>
       </SetTags>
-      <Set>GCR</Set>
     </TagSetsLists>
     <TagSetsLists>
+      <Set>Cattington</Set>
       <SetTags>
         <string>9F,92219</string>
+        <string>Building</string>
+        <string>Bus</string>
+        <string>Car</string>
+        <string>Cattington</string>
+        <string>Church</string>
+        <string>Class101</string>
         <string>Crane</string>
+        <string>Factory</string>
         <string>G_W_R_TANK,2733</string>
+        <string>Garage</string>
+        <string>GWR,2721Class</string>
         <string>House</string>
+        <string>Layout</string>
         <string>LMSCoronationClass</string>
+        <string>LMSPug</string>
+        <string>Locos</string>
+        <string>Lorry</string>
+        <string>LowReliefBuilding</string>
+        <string>NewThings</string>
+        <string>People</string>
+        <string>SmokyJoe</string>
         <string>Station</string>
+        <string>Tanks</string>
         <string>Tardis</string>
         <string>ToadG_W</string>
+        <string>Town</string>
+        <string>TRack</string>
+        <string>Village</string>
         <string>WagonG-W</string>
         <string>WagonPersil</string>
+        <string>Wagons</string>
       </SetTags>
-      <Set>Cattington</Set>
+    </TagSetsLists>
+    <TagSetsLists>
+      <Set>ModelsLayouts</Set>
+      <SetTags>
+        <string>Avyn-a-llyin</string>
+        <string>BritanniaMills</string>
+        <string>Building</string>
+        <string>CardboardWorks</string>
+        <string>Cattington</string>
+        <string>Class101</string>
+        <string>Cumanavago</string>
+        <string>DMU</string>
+        <string>EastMidlandsFremoGroup</string>
+        <string>HazelbyBallastLoader</string>
+        <string>HighLevelJunction</string>
+        <string>HollingtonQuarry</string>
+        <string>Industrivej</string>
+        <string>Junesdale</string>
+        <string>KarolinaFalls</string>
+        <string>Kirkby-in-AshfieldMPD</string>
+        <string>LowReliefBuilding</string>
+        <string>NetherwoodSidings</string>
+        <string>NorthHaston</string>
+        <string>NorthRoad</string>
+        <string>St.Marys</string>
+        <string>Sutton-in-AshfieldTown</string>
+        <string>TasteOfAlber</string>
+        <string>Track</string>
+        <string>Village</string>
+        <string>Wagons</string>
+        <string>WelbyLaneRTC</string>
+        <string>Westbrook</string>
+      </SetTags>
     </TagSetsLists>
   </TagSets>
 </TagListHolders>

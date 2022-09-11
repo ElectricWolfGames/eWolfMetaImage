@@ -87,12 +87,31 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class10");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("D4067,Class10,Margaret Ethel - Thomas Alfred Naylor");
+            groupTags.Add("D4067");
+            groupTags.AddClearTags("Class10");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("12077,Class11");
             groupTags.Add("12077");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("12083,Class12");
+            groupTags.Add("12083");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("D8098,Class20");
             groupTags.Add("D8098");
+            groupTags.AddClearTags("Class20");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D8110,Class20");
+            groupTags.Add("D8110");
+            groupTags.AddClearTags("Class20");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D8154,Class20");
+            groupTags.Add("D8154");
             groupTags.AddClearTags("Class20");
             GroupTagCollection.Add(groupTags);
 
@@ -108,9 +127,17 @@ namespace eWolfMetaImage.Data
             groupTags.Add("37009");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("D6700,Class37");
+            groupTags.Add("D6700");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("D123,Class45,LeicestershireAndDerbyshireYeomanry");
             groupTags.Add("D123");
             groupTags.AddClearTags("LeicestershireAndDerbyshireYeomanry");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("46010,Class46");
+            groupTags.Add("46010");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("50017,Class50,RoyalOak ");
@@ -119,6 +146,10 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("55019,Class55,RoyalHighlandFusilier ");
             groupTags.Add("55019");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("55009,Class55,Alycidon ");
+            groupTags.Add("55009");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("926,Repton,4-4-0,SchoolsClass");
@@ -147,9 +178,48 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class08");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("08706,Class08");
+            groupTags.Add("08706");
+            groupTags.AddClearTags("Class08");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("08114,Class08,Gotham");
+            groupTags.Add("08114");
+            groupTags.AddClearTags("Class08");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("08220,Class08");
             groupTags.Add("08220");
             groupTags.AddClearTags("Class08");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("08922,Class08");
+            groupTags.Add("08922");
+            groupTags.AddClearTags("Class08");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D6508,Class33");
+            groupTags.Add("D6508");
+            groupTags.AddClearTags("Class33");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("No.419,CaledonianRailway");
+            groupTags.Add("No.419");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("46010,Class46");
+            groupTags.Add("46010");
+            groupTags.AddClearTags("Class46");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("47292,Class47");
+            groupTags.Add("47292");
+            groupTags.AddClearTags("Class47");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D5830,Class31");
+            groupTags.Add("D5830");
+            groupTags.AddClearTags("Class31");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("8274,2-8-0,LMSClass8");
@@ -169,10 +239,34 @@ namespace eWolfMetaImage.Data
             groupTags.Add("80080");
             GroupTagCollection.Add(groupTags);
 
-
             groupTags = new GroupTags("43044,Class43,HST");
             groupTags.Add("43044");
             groupTags.AddClearTags("Class43");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D2120,Class03");
+            groupTags.Add("D2120");
+            groupTags.AddClearTags("Class03");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("No31,Sir Robert McAlpine and Sons");
+            groupTags.Add("No31");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("M79900,Lightweight,Iris");
+            groupTags.Add("M79900");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("E51427,Class101,DMU");
+            groupTags.Add("E51427");
+            groupTags.AddClearTags("Class101");
+            groupTags.AddClearTags("DMU");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("50203,Class101,DMU");
+            groupTags.Add("50203");
+            groupTags.AddClearTags("Class101");
+            groupTags.AddClearTags("DMU");
             GroupTagCollection.Add(groupTags);
         }
     }
