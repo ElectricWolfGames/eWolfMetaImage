@@ -268,6 +268,62 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class101");
             groupTags.AddClearTags("DMU");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("100036,Wagon,OAA");
+            groupTags.Add("100036");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("1408,Tank,Wagon,OAA");
+            groupTags.Add("1408");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("5209,Tank,Wagon,OAA");
+            groupTags.Add("5209");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("6581,Tank,Wagon,Shell");
+            groupTags.Add("6581");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B740654,5-Plank,Wagon");
+            groupTags.Add("B740654");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B439708,OreHopper,Wagon");
+            groupTags.Add("B439708");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B385782,IronOreTippler,Wagon");
+            groupTags.Add("B385782");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("A4513,Tank,Wagon,Shell");
+            groupTags.Add("A4513");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("E87674,Box,Wagon,Insul-Fish");
+            groupTags.Add("E87674");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("41312,LMSIvattClass2,2-6-2T");
+            groupTags.Add("41312");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("65894,NERClassP3,LNERJ27,0-6-0");
+            groupTags.Add("65894");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("3436,Tank,Wagon,Esso");
+            groupTags.Add("3436");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("DB998926,Tank,Wagon,BR");
+            groupTags.Add("DB998926");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("500817,Tank,Wagon");
+            groupTags.Add("500817");
+            GroupTagCollection.Add(groupTags);
         }
     }
 }
