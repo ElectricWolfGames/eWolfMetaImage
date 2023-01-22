@@ -324,6 +324,14 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("500817,Tank,Wagon");
             groupTags.Add("500817");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("506,UrieClass,S15,4-6-0");
+            groupTags.Add("506");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("73082,Camelot,BRStandardClass5,4-6-0");
+            groupTags.Add("73082");
+            GroupTagCollection.Add(groupTags);
         }
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Set>Default</Set>
+  <Set>GCR</Set>
   <TagSets>
     <TagSetsLists>
       <Set>Default</Set>
@@ -57,14 +57,19 @@
         <string>08706</string>
         <string>08784</string>
         <string>08922</string>
+        <string>100036</string>
         <string>10119</string>
         <string>12083</string>
         <string>13101</string>
+        <string>1408</string>
+        <string>144003</string>
         <string>33201</string>
         <string>34072</string>
+        <string>3436</string>
         <string>37009</string>
         <string>37714</string>
         <string>3802</string>
+        <string>41312</string>
         <string>4137</string>
         <string>43044</string>
         <string>45305</string>
@@ -73,11 +78,15 @@
         <string>47292</string>
         <string>48305</string>
         <string>50017</string>
+        <string>500817</string>
+        <string>50203</string>
         <string>5209</string>
         <string>55009</string>
         <string>55019</string>
         <string>55826</string>
         <string>63601</string>
+        <string>6581</string>
+        <string>65894</string>
         <string>68067</string>
         <string>6990</string>
         <string>73156</string>
@@ -88,9 +97,14 @@
         <string>8274</string>
         <string>92134</string>
         <string>92214</string>
+        <string>A4513</string>
+        <string>A60</string>
         <string>A60Bridge326</string>
         <string>AndyFillingham</string>
         <string>Animals</string>
+        <string>B385782</string>
+        <string>B439708</string>
+        <string>B740654</string>
         <string>B784409</string>
         <string>BarryLycett</string>
         <string>Beavertail</string>
@@ -107,6 +121,7 @@
         <string>Class08</string>
         <string>Class10</string>
         <string>Class101</string>
+        <string>Class108</string>
         <string>Class144</string>
         <string>Class158</string>
         <string>Class20</string>
@@ -131,12 +146,14 @@
         <string>D8110</string>
         <string>D8154</string>
         <string>DavidPutts</string>
+        <string>DB998926</string>
         <string>DebbieGillott</string>
         <string>Diesel</string>
         <string>DMU</string>
         <string>E14064</string>
         <string>E1719E</string>
         <string>E51427</string>
+        <string>E87674</string>
         <string>Event</string>
         <string>FireEngine</string>
         <string>FoGCML</string>
@@ -150,6 +167,7 @@
         <string>LeicesterNorth</string>
         <string>LeicesterNorthStation</string>
         <string>LeicestershireNorthStation</string>
+        <string>LoughboroughMainlineStation</string>
         <string>LoughboroughSignalBox</string>
         <string>LoughboroughStation</string>
         <string>LovattHouse</string>
@@ -168,6 +186,7 @@
         <string>NormanPannell</string>
         <string>People</string>
         <string>Points</string>
+        <string>Poster</string>
         <string>Preci-Spark</string>
         <string>QuornStation</string>
         <string>QuornYard</string>
@@ -238,15 +257,21 @@
     <TagSetsLists>
       <Set>ModelsLayouts</Set>
       <SetTags>
+        <string>Ambleside</string>
         <string>Avyn-a-llyin</string>
+        <string>Brassingdale</string>
         <string>BritanniaMills</string>
+        <string>BrittanniaMills</string>
+        <string>Brunshafen</string>
         <string>Building</string>
+        <string>Burgedorf</string>
         <string>CardboardWorks</string>
         <string>Cattington</string>
         <string>Class101</string>
         <string>Cumanavago</string>
         <string>DMU</string>
         <string>EastMidlandsFremoGroup</string>
+        <string>Elmfield</string>
         <string>HazelbyBallastLoader</string>
         <string>HighLevelJunction</string>
         <string>HollingtonQuarry</string>
@@ -254,11 +279,18 @@
         <string>Junesdale</string>
         <string>KarolinaFalls</string>
         <string>Kirkby-in-AshfieldMPD</string>
+        <string>LeaningOnTheLampPost</string>
         <string>LowReliefBuilding</string>
         <string>NetherwoodSidings</string>
+        <string>NormanColliery</string>
         <string>NorthHaston</string>
         <string>NorthRoad</string>
+        <string>OffTheRails</string>
+        <string>Oscarton</string>
+        <string>SheffieldVictoria</string>
         <string>St.Marys</string>
+        <string>StMichaelsVale</string>
+        <string>StreamingBackToKrikby</string>
         <string>Sutton-in-AshfieldTown</string>
         <string>TasteOfAlber</string>
         <string>Track</string>
