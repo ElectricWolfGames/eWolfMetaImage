@@ -20,26 +20,6 @@ namespace eWolfMetaImage
         private int _index = 0;
         private string _videoFileName;
 
-        public string VideoFileNameToPlay
-        {
-            get
-            {
-                return _videoFileName;
-            }
-            set
-            {
-                _videoFileName = value;
-                OnPropertyChanged("VideoFileNameToPlay");
-            }
-        }
-        protected void OnPropertyChanged(string name)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            handler?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
-
-
         public SingleImage()
         {
             InitializeComponent();
@@ -63,11 +43,28 @@ namespace eWolfMetaImage
 
             mePlayer.MediaEnded += MePlayer_MediaEnded;
         }
-        private void MePlayer_MediaEnded(object sender, RoutedEventArgs e)
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public string VideoFileNameToPlay
         {
-            //_videoTaggerViewModel.SetNextVideo(pathField.Text);
-            //ShowNextVideoDetails();
+            get
+            {
+                return _videoFileName;
+            }
+            set
+            {
+                _videoFileName = value;
+                OnPropertyChanged("VideoFileNameToPlay");
+            }
         }
+
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            handler?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
+
         private void AllTag_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ComboBox comboBox = sender as ComboBox;
@@ -218,9 +215,12 @@ namespace eWolfMetaImage
 
         private string[] GetAllImages()
         {
-            // string[] files = Directory.GetFiles(ImageFolder.Text, "*.jpg;*.mov", SearchOption.AllDirectories);
             string[] files = Directory.EnumerateFiles(ImageFolder.Text, "*.*", SearchOption.AllDirectories)
-                    .Where(s => s.ToUpper().EndsWith(".JPG") || s.ToUpper().EndsWith(".MOV")).ToArray();
+                    .Where(s =>
+                    s.ToUpper().EndsWith(".JPG")
+                    || s.ToUpper().EndsWith(".MOV")
+                    || s.ToUpper().EndsWith(".MTS")
+                    ).ToArray();
             return files;
         }
 
@@ -233,6 +233,12 @@ namespace eWolfMetaImage
                 return false;
 
             return true;
+        }
+
+        private void MePlayer_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            //_videoTaggerViewModel.SetNextVideo(pathField.Text);
+            //ShowNextVideoDetails();
         }
 
         private void NamingSets_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -321,7 +327,20 @@ namespace eWolfMetaImage
                     mePlayer.Play();
                     mePlayer.IsEnabled = true;
                 }
-                    
+
+                return;
+            }
+            else if (filename.EndsWith(".MTS"))
+            {
+                var uri = new Uri(filename);
+                if (mePlayer.Source?.LocalPath != uri.LocalPath)
+                {
+                    ShowImageUI.Source = null;
+                    mePlayer.Source = uri;
+                    mePlayer.Play();
+                    mePlayer.IsEnabled = true;
+                }
+
                 return;
             }
             else

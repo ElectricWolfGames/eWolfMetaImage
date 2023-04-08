@@ -56,6 +56,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("78018");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("78019,BRStandardClass2,2-6-0");
+            groupTags.Add("78019");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("13101,Clas08");
             groupTags.Add("13101");
             groupTags.AddClearTags("Class08");
@@ -331,6 +335,10 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("73082,Camelot,BRStandardClass5,4-6-0");
             groupTags.Add("73082");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("34039,Boscastle,WestCountry,4-6-2");
+            groupTags.Add("34039");
             GroupTagCollection.Add(groupTags);
         }
     }
