@@ -340,6 +340,38 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("34039,Boscastle,WestCountry,4-6-2");
             groupTags.Add("34039");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B881987,Box,Wagon,Banana");
+            groupTags.Add("B881987");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B777633,Box,Wagon");
+            groupTags.Add("B777633");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B768248,Box,Wagon");
+            groupTags.Add("B768248");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("DB992358,BallastHopper,Wagon");
+            groupTags.Add("DB992358");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("Barabel,Sentinel");
+            groupTags.Add("Barabel");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("DL83,LondonTransport,Sentinel");
+            groupTags.Add("DL83");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("JacksGreen,1953,Hunslet,0-6-0");
+            groupTags.Add("JacksGreen");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("60007,SirNigelGresley,4-6-2");
+            groupTags.Add("60007");
+            GroupTagCollection.Add(groupTags);
         }
     }
 }
