@@ -127,6 +127,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("37714");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("37207,Class37");
+            groupTags.Add("37207");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("37009,Class37");
             groupTags.Add("37009");
             GroupTagCollection.Add(groupTags);
@@ -371,6 +375,10 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("60007,SirNigelGresley,4-6-2");
             groupTags.Add("60007");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D8588,Class17,Clayton ");
+            groupTags.Add("D8588");
             GroupTagCollection.Add(groupTags);
         }
     }
