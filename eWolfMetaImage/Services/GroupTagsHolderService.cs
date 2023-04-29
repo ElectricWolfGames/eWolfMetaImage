@@ -377,8 +377,8 @@ namespace eWolfMetaImage.Data
             groupTags.Add("60007");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("D8588,Class17,Clayton ");
-            groupTags.Add("D8588");
+            groupTags = new GroupTags("D8568,Class17,Clayton ");
+            groupTags.Add("D8568");
             GroupTagCollection.Add(groupTags);
         }
     }

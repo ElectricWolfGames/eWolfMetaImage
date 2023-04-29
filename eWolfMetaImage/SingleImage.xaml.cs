@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -110,6 +111,23 @@ namespace eWolfMetaImage
             _availableTags.TidyUp();
             ApplyAllTagsToList();
             _availableTags.Save();
+        }
+
+        private void Button_ApplyToAllClick(object sender, RoutedEventArgs e)
+        {
+            ImageDetails itemPrev = _imageHolders[0];
+            for (int i = 1; i < _imageHolders.Count; i++)
+            {
+                ImageDetails item = _imageHolders[i];
+                if (item == null)
+                    continue;
+
+                item.TagHolder.ClearAllTagsAfterFirst();
+                item.TagHolder.CopyTags(itemPrev.TagHolder);
+
+                SaveCurrentImage(item);
+            }
+            ShowImage();
         }
 
         private void Button_ClearTags(object sender, RoutedEventArgs e)

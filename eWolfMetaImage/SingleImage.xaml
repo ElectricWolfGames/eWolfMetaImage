@@ -36,6 +36,7 @@
                       x:Name="mePlayer"
                       Margin="0,45,10,65" />
             <Image Name ="ShowImageUI" HorizontalAlignment="Left" Height="723" Margin="10,45,0,0" VerticalAlignment="Top" Width="998" />
+            <Button x:Name="ApplyToAll" Content="AddAll" HorizontalAlignment="Right" VerticalAlignment="Top" Width="57" Grid.Column="2" Margin="0,187,10,0" Height="23" Click="Button_ApplyToAllClick" />
         </Grid>
         <Label Content="Image Path" HorizontalAlignment="Left" Margin="40,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.987,0.519" Width="77" />
         <Button Content="Go" HorizontalAlignment="Left" Margin="665,10,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="-0.017,0.491" Click="Button_GetImages" />
