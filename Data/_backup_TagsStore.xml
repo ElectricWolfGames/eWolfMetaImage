@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Set>ModelsLayouts</Set>
+  <Set>Default</Set>
   <TagSets>
     <TagSetsLists>
       <Set>Default</Set>
@@ -74,6 +74,7 @@
         <string>3802</string>
         <string>41312</string>
         <string>4137</string>
+        <string>43025</string>
         <string>43044</string>
         <string>45305</string>
         <string>46010</string>
@@ -329,6 +330,7 @@
         <string>StMichaelsVale</string>
         <string>StreamingBackToKrikby</string>
         <string>Sutton-in-AshfieldTown</string>
+        <string>Tamaro</string>
         <string>TasteOfAlber</string>
         <string>Track</string>
         <string>Village</string>

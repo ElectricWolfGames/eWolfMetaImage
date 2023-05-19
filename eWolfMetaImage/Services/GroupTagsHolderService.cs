@@ -252,6 +252,11 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class43");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("43025,Class43,HST");
+            groupTags.Add("43025");
+            groupTags.AddClearTags("Class43");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("D2120,Class03");
             groupTags.Add("D2120");
             groupTags.AddClearTags("Class03");
@@ -379,6 +384,10 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("D8568,Class17,Clayton ");
             groupTags.Add("D8568");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("144003,Class144,Pacer");
+            groupTags.Add("144003");
             GroupTagCollection.Add(groupTags);
         }
     }
