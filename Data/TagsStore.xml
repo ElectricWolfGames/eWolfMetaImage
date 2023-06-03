@@ -63,13 +63,19 @@
         <string>13101</string>
         <string>1408</string>
         <string>144003</string>
+        <string>21C127</string>
+        <string>2686</string>
+        <string>31466</string>
+        <string>319290</string>
         <string>33201</string>
         <string>34039</string>
         <string>34072</string>
         <string>3436</string>
+        <string>345</string>
         <string>37009</string>
         <string>3711</string>
         <string>37207</string>
+        <string>37308</string>
         <string>37714</string>
         <string>3802</string>
         <string>41312</string>
@@ -98,6 +104,7 @@
         <string>6990</string>
         <string>73082</string>
         <string>73156</string>
+        <string>7714</string>
         <string>78018</string>
         <string>78019</string>
         <string>80080</string>
@@ -123,6 +130,7 @@
         <string>BarryLycett</string>
         <string>BB1987</string>
         <string>Beavertail</string>
+        <string>BewdleyStation</string>
         <string>Bike</string>
         <string>Bikes</string>
         <string>BreakCoach</string>
@@ -160,6 +168,7 @@
         <string>D8098</string>
         <string>D8110</string>
         <string>D8154</string>
+        <string>D821</string>
         <string>D8568</string>
         <string>DavidPutts</string>
         <string>DB992358</string>
@@ -178,12 +187,14 @@
         <string>Funfair</string>
         <string>GoodsShed</string>
         <string>GoodsVan</string>
+        <string>GunpowderVan</string>
         <string>HopperWagons</string>
         <string>HotchleyHill</string>
         <string>JacksGreen</string>
         <string>JaclsGreen</string>
         <string>KarlGillott</string>
         <string>KenSimms</string>
+        <string>KidderminsterStation</string>
         <string>LancasterBomber</string>
         <string>LeicesterNorth</string>
         <string>LeicesterNorthStation</string>
@@ -221,6 +232,7 @@
         <string>S1706S</string>
         <string>Sentinel</string>
         <string>ShackerstoneStation</string>
+        <string>SharkBrakeVan</string>
         <string>Shed</string>
         <string>ShentonStation</string>
         <string>Signal</string>
@@ -238,6 +250,7 @@
         <string>VTG60874</string>
         <string>VTG60879</string>
         <string>Wagon</string>
+        <string>WaterTower</string>
         <string>Wheels</string>
         <string>Workmen</string>
         <string>YarwellStation</string>

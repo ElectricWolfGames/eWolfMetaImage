@@ -389,6 +389,30 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("144003,Class144,Pacer");
             groupTags.Add("144003");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("21C127,WestCountryClass,TamValley");
+            groupTags.Add("21C127");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("31466,Class31");
+            groupTags.Add("31466");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("31466,Class31");
+            groupTags.Add("31466");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D821,Class42,Warship");
+            groupTags.Add("D821");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("319290,Ruston&Hornsby,0-4-0");
+            groupTags.Add("319290");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("7714,GWR5700,Pannier");
+            groupTags.Add("7714");
+            GroupTagCollection.Add(groupTags);
         }
     }
 }

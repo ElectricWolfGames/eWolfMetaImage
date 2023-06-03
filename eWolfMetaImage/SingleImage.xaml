@@ -40,7 +40,7 @@
         </Grid>
         <Label Content="Image Path" HorizontalAlignment="Left" Margin="40,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.987,0.519" Width="77" />
         <Button Content="Go" HorizontalAlignment="Left" Margin="665,10,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="-0.017,0.491" Click="Button_GetImages" />
-        <TextBox x:Name="ImageFolder" HorizontalAlignment="Left" Height="23" Margin="117,9,0,0" TextWrapping="Wrap" Text="D:\Trains\Photos - BackUp\2021\2021-10-10 Kirkby-in-ashfield\02 Cumanavago\" VerticalAlignment="Top" Width="543" />
+        <TextBox x:Name="ImageFolder" HorizontalAlignment="Left" Height="23" Margin="117,9,0,0" TextWrapping="Wrap" Text="E:\Trains\Photos - Main\2023\2023-06-02 GCR 1940s\02\" VerticalAlignment="Top" Width="543" />
         <Button Content="Next" HorizontalAlignment="Left" Margin="1202,13,0,0" VerticalAlignment="Top" Width="95" Click="Button_NextClick" Grid.Row="1" Height="29" />
         <Button Content="Prev" HorizontalAlignment="Left" Margin="1059,13,0,0" VerticalAlignment="Top" Width="104" Click="Button_PrevClick" Grid.Row="1" Height="29" />
         <Button Content="ClearTags" HorizontalAlignment="Left" Margin="1059,48,0,0" VerticalAlignment="Top" Width="75" Click="Button_ClearTags" Grid.Row="1" />
