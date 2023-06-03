@@ -334,7 +334,7 @@ namespace eWolfMetaImage
 
             string filename = _imageHolders[_index].FilePath;
             NewFileName.Content = _imageHolders[_index].DisplayTags;
-
+            
             if (filename.EndsWith(".MOV"))
             {
                 var uri = new Uri(filename);
@@ -345,7 +345,6 @@ namespace eWolfMetaImage
                     mePlayer.Play();
                     mePlayer.IsEnabled = true;
                 }
-
                 return;
             }
             else if (filename.EndsWith(".MTS"))
