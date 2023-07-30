@@ -290,6 +290,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("1408");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("3711,Tank,Wagon");
+            groupTags.Add("3711");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("5209,Tank,Wagon,OAA");
             groupTags.Add("5209");
             GroupTagCollection.Add(groupTags);
@@ -413,6 +417,39 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("7714,GWR5700,Pannier");
             groupTags.Add("7714");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("E281882,OpenHigh");
+            groupTags.Add("E281882");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("E212315,Plate");
+            groupTags.Add("E212315");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B954546,Brakevan,20T");
+            groupTags.Add("B954546");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("ADB975397,TestCar");
+            groupTags.Add("ADB975397");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B916549,SingleBolster");
+            groupTags.Add("B916549");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("DB461074,Medfit");
+            groupTags.Add("DB461074");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B458484,Medfit");
+            groupTags.Add("B458484");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("B425356,CoalHopper");
+            groupTags.Add("B425356");
+            GroupTagCollection.Add(groupTags);
+
         }
     }
 }

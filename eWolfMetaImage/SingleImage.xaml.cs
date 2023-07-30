@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Security.AccessControl;
+using System.Security.Policy;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -13,6 +14,10 @@ using eWolfTagHolders.Tags;
 
 namespace eWolfMetaImage
 {
+
+    // https://github.com/unosquare/ffmediaelement
+
+
     public partial class SingleImage : Window, INotifyPropertyChanged
     {
         private string _allTagsSelection = string.Empty;
@@ -349,13 +354,19 @@ namespace eWolfMetaImage
             }
             else if (filename.EndsWith(".MTS"))
             {
-                var uri = new Uri(filename);
+                var uri = new Uri(filename, UriKind.RelativeOrAbsolute);
                 if (mePlayer.Source?.LocalPath != uri.LocalPath)
                 {
+                    mePlayer.Stop();
+                    mePlayer.IsEnabled = false;
                     ShowImageUI.Source = null;
+
                     mePlayer.Source = uri;
-                    mePlayer.Play();
                     mePlayer.IsEnabled = true;
+                    mePlayer.ScrubbingEnabled = false;
+                    mePlayer.IsMuted = true;
+                    
+                    mePlayer.Play();
                 }
 
                 return;
@@ -374,6 +385,14 @@ namespace eWolfMetaImage
             bi.StreamSource = ms;
             bi.EndInit();
             ShowImageUI.Source = bi;
+        }
+
+        private void mediaElement_MediaFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+            int i = 0;
+            i++;
+            string path = mePlayer.Source.AbsolutePath;
+            mePlayer.Play();
         }
 
         private void TagList_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
