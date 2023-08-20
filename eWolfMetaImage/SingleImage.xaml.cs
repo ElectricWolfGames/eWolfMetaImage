@@ -204,8 +204,15 @@ namespace eWolfMetaImage
             for (int i = 0; i < _imageHolders.Count; i++)
             {
                 CheckImageTag(_imageHolders[i]);
+                //RemoveText(_imageHolders[i], "London");
                 SaveCurrentImage(_imageHolders[i]);
             }
+        }
+
+        private void RemoveText(ImageDetails imageDetails, string textToRemove)
+        {
+            TagHolders tagHolder = imageDetails.TagHolder;
+            tagHolder.RemoveTag(textToRemove);
         }
 
         private void Button_UpdateDateTags(object sender, RoutedEventArgs e)
@@ -243,6 +250,7 @@ namespace eWolfMetaImage
                     s.ToUpper().EndsWith(".JPG")
                     || s.ToUpper().EndsWith(".MOV")
                     || s.ToUpper().EndsWith(".MTS")
+                    || s.ToUpper().EndsWith(".MP4")
                     ).ToArray();
             return files;
         }
@@ -352,7 +360,7 @@ namespace eWolfMetaImage
                 }
                 return;
             }
-            else if (filename.EndsWith(".MTS"))
+            else if (filename.EndsWith(".MTS") || filename.EndsWith(".MP4"))
             {
                 var uri = new Uri(filename, UriKind.RelativeOrAbsolute);
                 if (mePlayer.Source?.LocalPath != uri.LocalPath)

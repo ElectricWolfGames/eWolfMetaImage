@@ -5,8 +5,10 @@
     <TagSetsLists>
       <Set>Default</Set>
       <SetTags>
+        <string>AGM</string>
         <string>BattlefieldLine</string>
         <string>Cattington</string>
+        <string>CharnwoodForest</string>
         <string>DCRT</string>
         <string>Fawley</string>
         <string>GCR</string>
@@ -14,6 +16,7 @@
         <string>HinckleyModelShow</string>
         <string>Home</string>
         <string>Kirkby-in-ashfield</string>
+        <string>Licoln</string>
         <string>LittleBytham</string>
         <string>LocationTag</string>
         <string>London</string>
@@ -21,6 +24,7 @@
         <string>NeneValley</string>
         <string>RushcliffeHalt</string>
         <string>SevernVallyRailway</string>
+        <string>SoarVallyModelShow</string>
       </SetTags>
     </TagSetsLists>
   </TagSets>

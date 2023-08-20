@@ -450,6 +450,15 @@ namespace eWolfMetaImage.Data
             groupTags.Add("B425356");
             GroupTagCollection.Add(groupTags);
 
+
+            groupTags = new GroupTags("D5054,Class24");
+            groupTags.Add("D5054");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("6988,SwithlandHall,4-6-0");
+            groupTags.Add("6988");
+            groupTags.AddClearTags("SwithlandHall");
+            GroupTagCollection.Add(groupTags);
         }
     }
 }

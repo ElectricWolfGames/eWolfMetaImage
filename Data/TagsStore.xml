@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Set>Default</Set>
+  <Set>GCR</Set>
   <TagSets>
     <TagSetsLists>
       <Set>Default</Set>
@@ -102,6 +102,7 @@
         <string>6581</string>
         <string>65894</string>
         <string>68067</string>
+        <string>6988</string>
         <string>6990</string>
         <string>73082</string>
         <string>73156</string>
@@ -168,6 +169,7 @@
         <string>D2867</string>
         <string>D4067</string>
         <string>D4137</string>
+        <string>D5054</string>
         <string>D5185</string>
         <string>D5830</string>
         <string>D6508</string>
@@ -233,6 +235,7 @@
         <string>Points</string>
         <string>Poster</string>
         <string>Preci-Spark</string>
+        <string>Protesters</string>
         <string>QuornStation</string>
         <string>QuornYard</string>
         <string>RothleySignalBox</string>
@@ -242,6 +245,7 @@
         <string>RushcliffeHaltStation</string>
         <string>Ruston</string>
         <string>S1706S</string>
+        <string>ScammellScarab</string>
         <string>Sentinel</string>
         <string>ShackerstoneStation</string>
         <string>SharkBrakeVan</string>
