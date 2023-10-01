@@ -148,15 +148,15 @@ namespace eWolfMetaImage.Data
             groupTags.Add("46010");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("50017,Class50,RoyalOak ");
+            groupTags = new GroupTags("50017,Class50,RoyalOak");
             groupTags.Add("50017");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("55019,Class55,RoyalHighlandFusilier ");
+            groupTags = new GroupTags("55019,Class55,RoyalHighlandFusilier");
             groupTags.Add("55019");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("55009,Class55,Alycidon ");
+            groupTags = new GroupTags("55009,Class55,Alycidon");
             groupTags.Add("55009");
             GroupTagCollection.Add(groupTags);
 
@@ -386,7 +386,7 @@ namespace eWolfMetaImage.Data
             groupTags.Add("60007");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("D8568,Class17,Clayton ");
+            groupTags = new GroupTags("D8568,Class17,Clayton");
             groupTags.Add("D8568");
             GroupTagCollection.Add(groupTags);
 
@@ -462,6 +462,67 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("1705,Class47,SparrowHawk");
             groupTags.Add("1705");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D7076,Class35,Hymek");
+            groupTags.Add("D7076");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D7029,Class35,Hymek");
+            groupTags.Add("D7029");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D832,Class42,Warship,Onslaught");
+            groupTags.Add("D832");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D1048,Class52,Western,WesternLady");
+            groupTags.Add("D1048");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D182,Class46");
+            groupTags.Add("D182");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("20189,Class20");
+            groupTags.Add("20189");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D821,Class42,Warship,GreyHound");
+            groupTags.Add("D821");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D1013,Class52,Western,WesternRanger");
+            groupTags.Add("D1013");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D1015,Class52,Western,WesternChampion");
+            groupTags.Add("D1015");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D1062,Class52,Western,WesternCourier");
+            groupTags.Add("D1062");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D9551,Class14");
+            groupTags.Add("D9551");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("20048,Class20");
+            groupTags.Add("20048");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("37263,Class37");
+            groupTags.Add("37263");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("40106,Class40,Atlantic Conveyor");
+            groupTags.Add("40106");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("50035,Class50,ArkRoyal");
+            groupTags.Add("50035");
+            GroupTagCollection.Add(groupTags);
+
         }
     }
 }
