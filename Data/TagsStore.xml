@@ -65,9 +65,12 @@
         <string>144003</string>
         <string>1705</string>
         <string>21C127</string>
+        <string>2253</string>
         <string>2686</string>
         <string>31466</string>
         <string>319290</string>
+        <string>33108</string>
+        <string>33180</string>
         <string>33201</string>
         <string>34039</string>
         <string>34072</string>
@@ -76,6 +79,7 @@
         <string>37009</string>
         <string>3711</string>
         <string>37207</string>
+        <string>37263</string>
         <string>37308</string>
         <string>37714</string>
         <string>3802</string>
@@ -88,7 +92,9 @@
         <string>46521</string>
         <string>47292</string>
         <string>48305</string>
+        <string>48773</string>
         <string>50017</string>
+        <string>50035</string>
         <string>500817</string>
         <string>50203</string>
         <string>506</string>
@@ -143,6 +149,7 @@
         <string>Bikes</string>
         <string>BreakCoach</string>
         <string>BreakVan</string>
+        <string>BridgnorthStation</string>
         <string>B-Roll</string>
         <string>BunnyMine</string>
         <string>Bus</string>
@@ -164,9 +171,14 @@
         <string>Colin</string>
         <string>Container</string>
         <string>Crane</string>
+        <string>D1013</string>
+        <string>D1015</string>
+        <string>D1048</string>
         <string>D123</string>
+        <string>D182</string>
         <string>D2120</string>
         <string>D2867</string>
+        <string>D3586</string>
         <string>D4067</string>
         <string>D4137</string>
         <string>D5054</string>
@@ -175,11 +187,15 @@
         <string>D6508</string>
         <string>D6535</string>
         <string>D6700</string>
+        <string>D7029</string>
+        <string>D7076</string>
         <string>D8098</string>
         <string>D8110</string>
         <string>D8154</string>
         <string>D821</string>
+        <string>D832</string>
         <string>D8568</string>
+        <string>D9551</string>
         <string>DavidPutts</string>
         <string>DB461074</string>
         <string>DB992358</string>
@@ -200,6 +216,7 @@
         <string>Funfair</string>
         <string>GoodsShed</string>
         <string>GoodsVan</string>
+        <string>GORDON</string>
         <string>GunpowderVan</string>
         <string>HopperWagons</string>
         <string>HotchleyHill</string>
@@ -332,6 +349,7 @@
         <string>Class101</string>
         <string>CookEnd</string>
         <string>Cumanavago</string>
+        <string>D7029</string>
         <string>DMU</string>
         <string>EastMidlandsFremoGroup</string>
         <string>Elmfield</string>

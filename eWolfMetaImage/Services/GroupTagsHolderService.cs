@@ -523,6 +523,23 @@ namespace eWolfMetaImage.Data
             groupTags.Add("50035");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("33108,Class33");
+            groupTags.Add("33108");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("48773,LMS,Class8F,2-8-0");
+            groupTags.Add("48773");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D3586,Clas08");
+            groupTags.Add("D3586");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("600,GORDON");
+            groupTags.Add("GORDON");
+            groupTags.AddClearTags("Class08"); 
+            GroupTagCollection.Add(groupTags);
+
         }
     }
 }
