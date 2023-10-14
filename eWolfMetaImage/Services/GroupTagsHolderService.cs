@@ -540,6 +540,29 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class08"); 
             GroupTagCollection.Add(groupTags);
 
+
+            groupTags = new GroupTags("600,GORDON");
+            groupTags.Add("GORDON");
+            groupTags.AddClearTags("Class08");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("2999,Lady of Legend");
+            groupTags.Add("2999");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("No72,Austerity,0-6-0");
+            groupTags.Add("No72");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("339,TankA,Wagon");
+            groupTags.Add("339");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("ColinMcAndrew&Coy");
+            groupTags.Add("ColinMcAndrew&Coy");
+            GroupTagCollection.Add(groupTags);
+
+
         }
     }
 }
