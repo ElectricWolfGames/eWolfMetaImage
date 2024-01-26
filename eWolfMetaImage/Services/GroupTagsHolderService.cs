@@ -563,6 +563,24 @@ namespace eWolfMetaImage.Data
             GroupTagCollection.Add(groupTags);
 
 
+            groupTags = new GroupTags("75069,BRStandardClass4MT,4-6-0");
+            groupTags.Add("75069");
+            GroupTagCollection.Add(groupTags);
+            
+            groupTags = new GroupTags("153371,Class153,SuperSprinter");
+            groupTags.Add("153371");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("3170,1903Autocar");
+            groupTags.Add("3170");
+            GroupTagCollection.Add(groupTags);
+
+
+            /*
+            groupTags = new GroupTags("52322),L&Y A Clas,4-6-0");
+            groupTags.Add("52322)");
+            GroupTagCollection.Add(groupTags);*/
+
         }
     }
 }
