@@ -23,3 +23,5 @@
 /.vs
 /eWolfMetaTaggerCommon/bin/Debug/net5.0
 /eWolfMetaTaggerCommon.UnitTests/bin/Debug/net5.0
+/Tools/NameFilesWithFolderName/bin/Debug/net8.0
+/Tools/NameFilesWithFolderName/obj
