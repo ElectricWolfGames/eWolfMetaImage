@@ -160,6 +160,11 @@ namespace eWolfMetaImage.Data
             groupTags.Add("55009");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("55013,Class55,TheBlackWatch");
+            groupTags.Add("55013");
+            GroupTagCollection.Add(groupTags);
+
+
             groupTags = new GroupTags("926,Repton,4-4-0,SchoolsClass");
             groupTags.Add("Repton");
             groupTags.AddClearTags("926");
@@ -575,11 +580,18 @@ namespace eWolfMetaImage.Data
             groupTags.Add("3170");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("52322,L&YClass27,0-6-0");
+            groupTags.Add("52322");
+            GroupTagCollection.Add(groupTags);
 
-            /*
-            groupTags = new GroupTags("52322),L&Y A Clas,4-6-0");
-            groupTags.Add("52322)");
-            GroupTagCollection.Add(groupTags);*/
+            groupTags = new GroupTags("31210,Class31");
+            groupTags.Add("31210");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("1264,LNER,Thompson,ClassB1");
+            groupTags.Add("1264");
+            GroupTagCollection.Add(groupTags);
+
 
         }
     }

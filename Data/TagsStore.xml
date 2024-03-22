@@ -15,6 +15,7 @@
     <TagSetsLists>
       <Set>Home</Set>
       <SetTags>
+        <string>75069</string>
         <string>Barge</string>
         <string>Bridge</string>
         <string>Brook</string>
@@ -60,6 +61,7 @@
         <string>100036</string>
         <string>10119</string>
         <string>12083</string>
+        <string>1264</string>
         <string>13101</string>
         <string>1408</string>
         <string>144003</string>
@@ -69,6 +71,7 @@
         <string>2253</string>
         <string>2686</string>
         <string>2999</string>
+        <string>31210</string>
         <string>31466</string>
         <string>3170</string>
         <string>319290</string>
@@ -103,8 +106,10 @@
         <string>50203</string>
         <string>506</string>
         <string>5209</string>
+        <string>52322</string>
         <string>5401</string>
         <string>55009</string>
+        <string>55013</string>
         <string>55019</string>
         <string>55826</string>
         <string>60007</string>
@@ -214,8 +219,10 @@
         <string>E1719E</string>
         <string>E212315</string>
         <string>E281882</string>
+        <string>E50266</string>
         <string>E51427</string>
         <string>E87674</string>
+        <string>Effects</string>
         <string>Event</string>
         <string>FireEngine</string>
         <string>FoGCML</string>

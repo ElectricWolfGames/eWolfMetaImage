@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Set>GCR</Set>
+  <Set>Default</Set>
   <TagSets>
     <TagSetsLists>
       <Set>Default</Set>
@@ -15,6 +15,7 @@
     <TagSetsLists>
       <Set>Home</Set>
       <SetTags>
+        <string>75069</string>
         <string>Barge</string>
         <string>Bridge</string>
         <string>Brook</string>
@@ -60,9 +61,11 @@
         <string>100036</string>
         <string>10119</string>
         <string>12083</string>
+        <string>1264</string>
         <string>13101</string>
         <string>1408</string>
         <string>144003</string>
+        <string>153371</string>
         <string>1705</string>
         <string>21C127</string>
         <string>2253</string>
@@ -102,8 +105,10 @@
         <string>50203</string>
         <string>506</string>
         <string>5209</string>
+        <string>52322</string>
         <string>5401</string>
         <string>55009</string>
+        <string>55013</string>
         <string>55019</string>
         <string>55826</string>
         <string>60007</string>
@@ -213,8 +218,10 @@
         <string>E1719E</string>
         <string>E212315</string>
         <string>E281882</string>
+        <string>E50266</string>
         <string>E51427</string>
         <string>E87674</string>
+        <string>Effects</string>
         <string>Event</string>
         <string>FireEngine</string>
         <string>FoGCML</string>
