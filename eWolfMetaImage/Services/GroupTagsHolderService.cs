@@ -593,6 +593,32 @@ namespace eWolfMetaImage.Data
             GroupTagCollection.Add(groupTags);
 
 
+            groupTags = new GroupTags("47761,Class47");
+            groupTags.Add("47761");
+            GroupTagCollection.Add(groupTags);
+
+
+
+            groupTags = new GroupTags("141113,Class141");
+            groupTags.Add("141113");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("L0262,Class108");
+            groupTags.Add("L0262");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("L0262,Class108");
+            groupTags.Add("L0262");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D9555,Class14");
+            groupTags.Add("D9555");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("6233,DuchessOfSutherland,4-6-2");
+            groupTags.Add("6233");
+            GroupTagCollection.Add(groupTags);
+
         }
     }
 }

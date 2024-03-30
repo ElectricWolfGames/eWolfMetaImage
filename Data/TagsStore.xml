@@ -54,6 +54,7 @@
       <SetTags>
         <string>08114</string>
         <string>08220</string>
+        <string>08590</string>
         <string>08694</string>
         <string>08706</string>
         <string>08784</string>
@@ -64,6 +65,7 @@
         <string>1264</string>
         <string>13101</string>
         <string>1408</string>
+        <string>141113</string>
         <string>144003</string>
         <string>153371</string>
         <string>1705</string>
@@ -94,10 +96,13 @@
         <string>4137</string>
         <string>43025</string>
         <string>43044</string>
+        <string>43089</string>
         <string>45305</string>
         <string>46010</string>
+        <string>46203</string>
         <string>46521</string>
         <string>47292</string>
+        <string>47761</string>
         <string>48305</string>
         <string>48773</string>
         <string>50017</string>
@@ -113,6 +118,7 @@
         <string>55019</string>
         <string>55826</string>
         <string>60007</string>
+        <string>6233</string>
         <string>63601</string>
         <string>6581</string>
         <string>65894</string>
@@ -163,6 +169,7 @@
         <string>B-Roll</string>
         <string>BunnyMine</string>
         <string>Bus</string>
+        <string>ButterleyStation</string>
         <string>CanalBridge</string>
         <string>Car</string>
         <string>Cat</string>
@@ -207,6 +214,7 @@
         <string>D832</string>
         <string>D8568</string>
         <string>D9551</string>
+        <string>D9555</string>
         <string>DavidPutts</string>
         <string>DB461074</string>
         <string>DB992358</string>
@@ -239,6 +247,7 @@
         <string>KarlGillott</string>
         <string>KenSimms</string>
         <string>KidderminsterStation</string>
+        <string>L0262</string>
         <string>LancasterBomber</string>
         <string>LeicesterNorth</string>
         <string>LeicesterNorthStation</string>
@@ -247,6 +256,7 @@
         <string>LoughboroughSignalBox</string>
         <string>LoughboroughStation</string>
         <string>LovattHouse</string>
+        <string>M51907</string>
         <string>M79900</string>
         <string>Mainline</string>
         <string>MalcolmHolmes</string>
@@ -288,6 +298,7 @@
         <string>Smoke</string>
         <string>Starfish</string>
         <string>SteamEngine</string>
+        <string>SwanwickJunction</string>
         <string>Tanker</string>
         <string>Tornado</string>
         <string>Tracks</string>
