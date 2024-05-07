@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Hello, World!");
 
-            string path = "E:\\Trains\\_WebsiteData\\ModelEvents\\2023-08-12 Loughborough model railway exhibition";
+            string path = "E:\\Trains\\Photos - Main\\2024\\2024-04-22 David Clark RailwayTrust\\Images\\";
 
             string[] folders = Directory.GetDirectories(path);
 
@@ -22,7 +22,6 @@
                     if (!fName.Contains(name))
                     {
                         fName = fName.Replace(".", $" {name}.");
-                        fName = fName.Replace("2023-08-12 ", "");
                         File.Move(file, $"{folder}\\{fName}");
                     }
                 }

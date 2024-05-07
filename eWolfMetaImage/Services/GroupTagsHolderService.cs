@@ -139,6 +139,11 @@ namespace eWolfMetaImage.Data
             groupTags.Add("D6700");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("D6808,Class37");
+            groupTags.Add("D6808");
+            GroupTagCollection.Add(groupTags);
+
+
             groupTags = new GroupTags("D123,Class45,LeicestershireAndDerbyshireYeomanry");
             groupTags.Add("D123");
             groupTags.AddClearTags("LeicestershireAndDerbyshireYeomanry");
@@ -617,6 +622,12 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("6233,DuchessOfSutherland,4-6-2");
             groupTags.Add("6233");
+            GroupTagCollection.Add(groupTags);
+
+
+
+            groupTags = new GroupTags("31108,Class31");
+            groupTags.Add("31108");
             GroupTagCollection.Add(groupTags);
 
         }
