@@ -14,9 +14,7 @@ using eWolfTagHolders.Tags;
 
 namespace eWolfMetaImage
 {
-
     // https://github.com/unosquare/ffmediaelement
-
 
     public partial class SingleImage : Window, INotifyPropertyChanged
     {
@@ -44,6 +42,7 @@ namespace eWolfMetaImage
             NamingSets.Items.Add("GCR");
             NamingSets.Items.Add("ModelsLayouts");
             NamingSets.Items.Add("Cattington");
+            NamingSets.Items.Add("Northampton And Lamport");
 
             ApplyLocationTagsToList();
 
@@ -209,12 +208,6 @@ namespace eWolfMetaImage
             }
         }
 
-        private void RemoveText(ImageDetails imageDetails, string textToRemove)
-        {
-            TagHolders tagHolder = imageDetails.TagHolder;
-            tagHolder.RemoveTag(textToRemove);
-        }
-
         private void Button_UpdateDateTags(object sender, RoutedEventArgs e)
         {
             string dt = Date.Text;
@@ -266,6 +259,14 @@ namespace eWolfMetaImage
             return true;
         }
 
+        private void mediaElement_MediaFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+            int i = 0;
+            i++;
+            string path = mePlayer.Source.AbsolutePath;
+            mePlayer.Play();
+        }
+
         private void MePlayer_MediaEnded(object sender, RoutedEventArgs e)
         {
             //_videoTaggerViewModel.SetNextVideo(pathField.Text);
@@ -308,6 +309,12 @@ namespace eWolfMetaImage
             _availableTags.Save();
         }
 
+        private void RemoveText(ImageDetails imageDetails, string textToRemove)
+        {
+            TagHolders tagHolder = imageDetails.TagHolder;
+            tagHolder.RemoveTag(textToRemove);
+        }
+
         private void SaveCurrentImage()
         {
             if (!IsValid(_index))
@@ -347,7 +354,7 @@ namespace eWolfMetaImage
 
             string filename = _imageHolders[_index].FilePath;
             NewFileName.Content = _imageHolders[_index].DisplayTags;
-            
+
             if (filename.EndsWith(".MOV"))
             {
                 var uri = new Uri(filename);
@@ -373,7 +380,7 @@ namespace eWolfMetaImage
                     mePlayer.IsEnabled = true;
                     mePlayer.ScrubbingEnabled = false;
                     mePlayer.IsMuted = true;
-                    
+
                     mePlayer.Play();
                 }
 
@@ -395,14 +402,6 @@ namespace eWolfMetaImage
             ShowImageUI.Source = bi;
         }
 
-        private void mediaElement_MediaFailed(object sender, ExceptionRoutedEventArgs e)
-        {
-            int i = 0;
-            i++;
-            string path = mePlayer.Source.AbsolutePath;
-            mePlayer.Play();
-        }
-
         private void TagList_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             if (!IsValid(_index))
@@ -415,6 +414,5 @@ namespace eWolfMetaImage
 
             ShowImage();
         }
-
     }
 }

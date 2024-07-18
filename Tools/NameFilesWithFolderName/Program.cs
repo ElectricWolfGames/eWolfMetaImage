@@ -2,11 +2,11 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
 
-            string path = "E:\\Trains\\Photos - Main\\2024\\2024-04-22 David Clark RailwayTrust\\Images\\";
+            string path = "E:\\Trains\\Photos - Main\\2024\\2024-07-14 Barrow Hill Roundhouse\\Images\\";
 
             string[] folders = Directory.GetDirectories(path);
 
@@ -16,7 +16,7 @@
                 Console.WriteLine(name);
 
                 string[] files = Directory.GetFiles(folder);
-                foreach (string file in files) 
+                foreach (string file in files)
                 {
                     string fName = Path.GetFileName(file);
                     if (!fName.Contains(name))
@@ -25,10 +25,7 @@
                         File.Move(file, $"{folder}\\{fName}");
                     }
                 }
-
             }
-
-
         }
     }
 }

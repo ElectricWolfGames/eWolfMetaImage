@@ -5,6 +5,7 @@
     <TagSetsLists>
       <Set>Default</Set>
       <SetTags>
+        <string>47205</string>
         <string>Brush</string>
         <string>Class156</string>
         <string>Class170</string>
@@ -52,8 +53,12 @@
     <TagSetsLists>
       <Set>GCR</Set>
       <SetTags>
+        <string>02003</string>
+        <string>03066</string>
+        <string>03118</string>
         <string>08114</string>
         <string>08220</string>
+        <string>08571</string>
         <string>08590</string>
         <string>08694</string>
         <string>08706</string>
@@ -69,6 +74,8 @@
         <string>144003</string>
         <string>153371</string>
         <string>1705</string>
+        <string>20302</string>
+        <string>20311</string>
         <string>21C127</string>
         <string>2253</string>
         <string>2686</string>
@@ -91,6 +98,12 @@
         <string>37207</string>
         <string>37263</string>
         <string>37308</string>
+        <string>37402</string>
+        <string>37419</string>
+        <string>37422</string>
+        <string>37425</string>
+        <string>37558</string>
+        <string>37612</string>
         <string>37714</string>
         <string>3802</string>
         <string>41312</string>
@@ -98,6 +111,7 @@
         <string>43025</string>
         <string>43044</string>
         <string>43089</string>
+        <string>45105</string>
         <string>45305</string>
         <string>46010</string>
         <string>46203</string>
@@ -133,6 +147,7 @@
         <string>78018</string>
         <string>78019</string>
         <string>80080</string>
+        <string>82008</string>
         <string>82306</string>
         <string>8274</string>
         <string>92134</string>
@@ -175,6 +190,7 @@
         <string>B-Roll</string>
         <string>BunnyMine</string>
         <string>Bus</string>
+        <string>Butler-Henderson</string>
         <string>ButterleyStation</string>
         <string>CanalBridge</string>
         <string>Car</string>
@@ -202,6 +218,8 @@
         <string>D182</string>
         <string>D2120</string>
         <string>D2867</string>
+        <string>D2868</string>
+        <string>D2996</string>
         <string>D3586</string>
         <string>D4067</string>
         <string>D4137</string>
@@ -214,12 +232,14 @@
         <string>D6808</string>
         <string>D7029</string>
         <string>D7076</string>
+        <string>D8001</string>
         <string>D8098</string>
         <string>D8110</string>
         <string>D8154</string>
         <string>D821</string>
         <string>D832</string>
         <string>D8568</string>
+        <string>D9015</string>
         <string>D9551</string>
         <string>D9555</string>
         <string>DavidPutts</string>
@@ -416,6 +436,21 @@
         <string>Wagons</string>
         <string>WelbyLaneRTC</string>
         <string>Westbrook</string>
+      </SetTags>
+    </TagSetsLists>
+    <TagSetsLists>
+      <Set>Northampton And Lamport</Set>
+      <SetTags>
+        <string>31289</string>
+        <string>Diesel</string>
+        <string>No.4</string>
+        <string>Ruston</string>
+        <string>Station</string>
+        <string>ST-Tank</string>
+        <string>Track</string>
+        <string>TrackionEngine</string>
+        <string>TrackSide</string>
+        <string>Wheels</string>
       </SetTags>
     </TagSetsLists>
   </TagSets>
