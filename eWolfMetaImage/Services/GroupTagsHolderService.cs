@@ -100,6 +100,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("12077");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("12139,Class11,Redcar");
+            groupTags.Add("12139");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("12083,Class12");
             groupTags.Add("12083");
             GroupTagCollection.Add(groupTags);
@@ -121,6 +125,10 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("D5185,Class25,SulzerType2");
             groupTags.Add("D5185");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D7628,Class25,Sybilla");
+            groupTags.Add("D7628");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("37714,Class37,CardiffCanton");
@@ -213,6 +221,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("45305");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("45428,EricTreacy,4-6-0,LMSClass5");
+            groupTags.Add("45428");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("48305,2-8-0,LMSClass8F");
             groupTags.Add("48305");
             GroupTagCollection.Add(groupTags);
@@ -267,6 +279,10 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("47292,Class47");
             groupTags.Add("47292");
             groupTags.AddClearTags("Class47");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("47077,Class47,NorthStar");
+            groupTags.Add("47077");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("D5830,Class31");
