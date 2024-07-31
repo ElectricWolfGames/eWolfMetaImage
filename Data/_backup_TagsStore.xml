@@ -53,6 +53,7 @@
     <TagSetsLists>
       <Set>GCR</Set>
       <SetTags>
+        <string>02003</string>
         <string>03066</string>
         <string>03118</string>
         <string>08114</string>
@@ -66,6 +67,7 @@
         <string>100036</string>
         <string>10119</string>
         <string>12083</string>
+        <string>12139</string>
         <string>1264</string>
         <string>13101</string>
         <string>1408</string>
@@ -112,9 +114,11 @@
         <string>43089</string>
         <string>45105</string>
         <string>45305</string>
+        <string>45428</string>
         <string>46010</string>
         <string>46203</string>
         <string>46521</string>
+        <string>47077</string>
         <string>47292</string>
         <string>47761</string>
         <string>48305</string>
@@ -146,6 +150,7 @@
         <string>78018</string>
         <string>78019</string>
         <string>80080</string>
+        <string>80136</string>
         <string>82008</string>
         <string>82306</string>
         <string>8274</string>
@@ -231,6 +236,7 @@
         <string>D6808</string>
         <string>D7029</string>
         <string>D7076</string>
+        <string>D7628</string>
         <string>D8001</string>
         <string>D8098</string>
         <string>D8110</string>
@@ -264,6 +270,7 @@
         <string>GoodsShed</string>
         <string>GoodsVan</string>
         <string>GORDON</string>
+        <string>GrosmontStation</string>
         <string>GunpowderVan</string>
         <string>HopperWagons</string>
         <string>HotchleyHill</string>
@@ -299,6 +306,8 @@
         <string>No72</string>
         <string>NormanPannell</string>
         <string>People</string>
+        <string>Pickering</string>
+        <string>PickeringStation</string>
         <string>Points</string>
         <string>Poster</string>
         <string>Preci-Spark</string>

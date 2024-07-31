@@ -311,6 +311,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("80080");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("80136,BRStandard 4MT,2-6-4T");
+            groupTags.Add("80136");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("43044,Class43,HST");
             groupTags.Add("43044");
             groupTags.AddClearTags("Class43");
