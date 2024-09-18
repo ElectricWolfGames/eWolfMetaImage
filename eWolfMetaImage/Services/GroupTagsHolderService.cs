@@ -70,6 +70,11 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class08");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("D3290,Class08");
+            groupTags.Add("D3290");
+            groupTags.AddClearTags("Class08");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("D4137,Class08");
             groupTags.Add("D4137");
             groupTags.Add("4137");
@@ -717,6 +722,10 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("Butler-Henderson,Class11F,4-4-0");
             groupTags.Add("Butler-Henderson");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("VTG87483,Wagon,TEA100tBogieTank");
+            groupTags.Add("VTG87483");
             GroupTagCollection.Add(groupTags);
         }
     }
