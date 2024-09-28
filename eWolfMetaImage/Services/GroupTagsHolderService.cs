@@ -366,11 +366,11 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("DMU");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("100036,Wagon,OAA");
+            groupTags = new GroupTags("100036,Wagon");
             groupTags.Add("100036");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("1408,Tank,Wagon,OAA");
+            groupTags = new GroupTags("1408,Tank,Wagon,TTB");
             groupTags.Add("1408");
             GroupTagCollection.Add(groupTags);
 
@@ -378,7 +378,7 @@ namespace eWolfMetaImage.Data
             groupTags.Add("3711");
             GroupTagCollection.Add(groupTags);
 
-            groupTags = new GroupTags("5209,Tank,Wagon,OAA");
+            groupTags = new GroupTags("5209,Tank,Wagon");
             groupTags.Add("5209");
             GroupTagCollection.Add(groupTags);
 
