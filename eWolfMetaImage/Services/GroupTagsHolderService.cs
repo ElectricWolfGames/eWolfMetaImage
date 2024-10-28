@@ -676,6 +676,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("31210");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("31235,Class31");
+            groupTags.Add("31235");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("1264,LNER,Thompson,ClassB1");
             groupTags.Add("1264");
             GroupTagCollection.Add(groupTags);
