@@ -731,6 +731,23 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("VTG87483,Wagon,TEA100tBogieTank");
             groupTags.Add("VTG87483");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("6880,GWR,BettonGrange,GrangeClass");
+            groupTags.Add("6880");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("1369,PannierTank");
+            groupTags.Add("1369");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("2807,GWR28xxClass");
+            groupTags.Add("2807");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("71480,WD,Fred,0-6-0");
+            groupTags.Add("71480");
+            GroupTagCollection.Add(groupTags);
         }
+
     }
 }
