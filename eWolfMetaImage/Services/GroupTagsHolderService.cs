@@ -747,6 +747,14 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("71480,WD,Fred,0-6-0");
             groupTags.Add("71480");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("6695,GWR,5600Class,0-6-2");
+            groupTags.Add("6695");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("3850,GWR,2884Class,2-8-0");
+            groupTags.Add("3850");
+            GroupTagCollection.Add(groupTags);
         }
 
     }

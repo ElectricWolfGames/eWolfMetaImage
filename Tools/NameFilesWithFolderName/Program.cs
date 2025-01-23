@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Hello, World!");
 
-            string path = "E:\\Trains\\Photos - Main\\2024\\2024-07-14 Barrow Hill Roundhouse\\Images\\";
+            string path = "E:\\Trains\\Photos - Main\\2025\\2025-01-18 Syston Model Railway\\19\\";
 
             string[] folders = Directory.GetDirectories(path);
 
