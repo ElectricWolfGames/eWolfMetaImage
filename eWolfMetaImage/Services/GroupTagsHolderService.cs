@@ -386,6 +386,15 @@ namespace eWolfMetaImage.Data
             groupTags.Add("6581");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("6071,Tank,Wagon,Shell");
+            groupTags.Add("6071");
+            GroupTagCollection.Add(groupTags);
+
+
+            groupTags = new GroupTags("6090,Tank,Wagon,Shell");
+            groupTags.Add("6090");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("B740654,5-Plank,Wagon");
             groupTags.Add("B740654");
             GroupTagCollection.Add(groupTags);
