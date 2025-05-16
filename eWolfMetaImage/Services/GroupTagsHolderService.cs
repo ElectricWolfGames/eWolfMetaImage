@@ -330,6 +330,10 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class43");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("44004,Class44,GreatGable");
+            groupTags.Add("44004");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("D2120,Class03");
             groupTags.Add("D2120");
             GroupTagCollection.Add(groupTags);
@@ -338,12 +342,20 @@ namespace eWolfMetaImage.Data
             groupTags.Add("D2868");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("SBR,Class02");
+            groupTags.Add("SBR");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("02003,Class02");
             groupTags.Add("02003");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("D2996,Class07");
             groupTags.Add("D2996");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("09001,Class09");
+            groupTags.Add("09001");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("No31,Sir Robert McAlpine and Sons");
@@ -389,7 +401,6 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("6071,Tank,Wagon,Shell");
             groupTags.Add("6071");
             GroupTagCollection.Add(groupTags);
-
 
             groupTags = new GroupTags("6090,Tank,Wagon,Shell");
             groupTags.Add("6090");
@@ -644,6 +655,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("08571");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("D3236,Clas08");
+            groupTags.Add("D3236");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("600,GORDON");
             groupTags.Add("GORDON");
             groupTags.AddClearTags("Class08");
@@ -695,6 +710,10 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("47761,Class47");
             groupTags.Add("47761");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D1842,Class47");
+            groupTags.Add("D1842");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("141113,Class141");
@@ -765,6 +784,5 @@ namespace eWolfMetaImage.Data
             groupTags.Add("3850");
             GroupTagCollection.Add(groupTags);
         }
-
     }
 }

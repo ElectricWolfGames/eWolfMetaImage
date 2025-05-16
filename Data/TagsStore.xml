@@ -64,6 +64,7 @@
         <string>08706</string>
         <string>08784</string>
         <string>08922</string>
+        <string>09001</string>
         <string>100036</string>
         <string>10119</string>
         <string>12083</string>
@@ -116,6 +117,7 @@
         <string>43025</string>
         <string>43044</string>
         <string>43089</string>
+        <string>44004</string>
         <string>45105</string>
         <string>45305</string>
         <string>45428</string>
@@ -215,6 +217,7 @@
         <string>Class10</string>
         <string>Class101</string>
         <string>Class108</string>
+        <string>Class14</string>
         <string>Class144</string>
         <string>Class158</string>
         <string>Class20</string>
@@ -232,10 +235,13 @@
         <string>D1048</string>
         <string>D123</string>
         <string>D182</string>
+        <string>D1842</string>
         <string>D2120</string>
         <string>D2867</string>
         <string>D2868</string>
         <string>D2996</string>
+        <string>D3235</string>
+        <string>D3236</string>
         <string>D3290</string>
         <string>D3586</string>
         <string>D4067</string>
@@ -334,6 +340,7 @@
         <string>RushcliffeHaltStation</string>
         <string>Ruston</string>
         <string>S1706S</string>
+        <string>SBR</string>
         <string>ScammellScarab</string>
         <string>Sentinel</string>
         <string>ShackerstoneStation</string>
@@ -356,6 +363,7 @@
         <string>VTG60874</string>
         <string>VTG60879</string>
         <string>VTG87483</string>
+        <string>W55006</string>
         <string>Wagon</string>
         <string>WaterTower</string>
         <string>Wheels</string>
