@@ -184,6 +184,18 @@ namespace eWolfMetaImage.Data
             groupTags.Add("03066");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("03113,Class03");
+            groupTags.Add("03113");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D2587,Class05");
+            groupTags.Add("D2587");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("PWM654,Ruston");
+            groupTags.Add("PWM654");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("45105,Class45");
             groupTags.Add("45105");
             GroupTagCollection.Add(groupTags);
@@ -286,6 +298,10 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class47");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("D1501,Class47");
+            groupTags.Add("D1501");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("47077,Class47,NorthStar");
             groupTags.Add("47077");
             GroupTagCollection.Add(groupTags);
@@ -350,8 +366,20 @@ namespace eWolfMetaImage.Data
             groupTags.Add("02003");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("D2139,Class02");
+            groupTags.Add("D2139");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("06003,Class06");
+            groupTags.Add("06003");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("D2996,Class07");
             groupTags.Add("D2996");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("07001,Class07");
+            groupTags.Add("07001");
             GroupTagCollection.Add(groupTags);
 
             groupTags = new GroupTags("09001,Class09");
@@ -631,6 +659,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("37263");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("37310,Class37");
+            groupTags.Add("37310");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("40106,Class40,Atlantic Conveyor");
             groupTags.Add("40106");
             GroupTagCollection.Add(groupTags);
@@ -782,6 +814,10 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("3850,GWR,2884Class,2-8-0");
             groupTags.Add("3850");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("750,Waleswood,HudswellClarke");
+            groupTags.Add("Waleswood");
             GroupTagCollection.Add(groupTags);
         }
     }
