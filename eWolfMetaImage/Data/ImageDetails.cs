@@ -1,5 +1,6 @@
-﻿using System.IO;
-using eWolfTagHolders.Tags;
+﻿using eWolfTagHolders.Tags;
+
+using System.IO;
 
 namespace eWolfMetaImage.Data
 {

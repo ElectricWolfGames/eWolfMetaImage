@@ -1,7 +1,8 @@
-﻿using System;
+﻿using eWolfCommon.Helpers;
+
+using System;
 using System.IO;
 using System.Xml.Serialization;
-using eWolfCommon.Helpers;
 
 namespace eWolfMetaImage.Data
 {

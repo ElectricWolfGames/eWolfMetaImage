@@ -819,6 +819,18 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("750,Waleswood,HudswellClarke");
             groupTags.Add("Waleswood");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("45596,LMS,JubileeClass,Bahamas");
+            groupTags.Add("45596");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("13268,LMS,StanierMogul");
+            groupTags.Add("13268");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("1054,LNWR,WebbCoalTank");
+            groupTags.Add("1054");
+            GroupTagCollection.Add(groupTags);
         }
     }
 }

@@ -36,7 +36,7 @@
                       UnloadedBehavior="Stop"
                       x:Name="mePlayer"
                       Margin="0,45,10,65"
-                      MediaFailed="mediaElement_MediaFailed"/>
+                      MediaFailed="mediaElement_MediaFailed" />
             <Image Name ="ShowImageUI" HorizontalAlignment="Left" Height="723" Margin="10,45,0,0" VerticalAlignment="Top" Width="998" />
             <Button x:Name="ApplyToAll" Content="AddAll" HorizontalAlignment="Right" VerticalAlignment="Top" Width="57" Grid.Column="2" Margin="0,187,10,0" Height="23" Click="Button_ApplyToAllClick" />
         </Grid>

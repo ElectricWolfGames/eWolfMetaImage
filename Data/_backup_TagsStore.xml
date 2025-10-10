@@ -55,7 +55,10 @@
       <SetTags>
         <string>02003</string>
         <string>03066</string>
+        <string>03113</string>
         <string>03118</string>
+        <string>06003</string>
+        <string>07001</string>
         <string>08114</string>
         <string>08220</string>
         <string>08571</string>
@@ -71,6 +74,7 @@
         <string>12139</string>
         <string>1264</string>
         <string>13101</string>
+        <string>13268</string>
         <string>1369</string>
         <string>1408</string>
         <string>141113</string>
@@ -103,6 +107,7 @@
         <string>37207</string>
         <string>37263</string>
         <string>37308</string>
+        <string>37310</string>
         <string>37402</string>
         <string>37419</string>
         <string>37422</string>
@@ -121,6 +126,7 @@
         <string>45105</string>
         <string>45305</string>
         <string>45428</string>
+        <string>45596</string>
         <string>46010</string>
         <string>46203</string>
         <string>46521</string>
@@ -234,9 +240,13 @@
         <string>D1015</string>
         <string>D1048</string>
         <string>D123</string>
+        <string>D1501</string>
         <string>D182</string>
         <string>D1842</string>
         <string>D2120</string>
+        <string>D2139</string>
+        <string>D2578</string>
+        <string>D2587</string>
         <string>D2867</string>
         <string>D2868</string>
         <string>D2996</string>
@@ -322,6 +332,7 @@
         <string>No.419</string>
         <string>No31</string>
         <string>No419</string>
+        <string>No5</string>
         <string>No72</string>
         <string>NormanPannell</string>
         <string>People</string>
@@ -331,6 +342,7 @@
         <string>Poster</string>
         <string>Preci-Spark</string>
         <string>Protesters</string>
+        <string>PWM654</string>
         <string>QuornStation</string>
         <string>QuornYard</string>
         <string>RothleySignalBox</string>
@@ -365,6 +377,7 @@
         <string>VTG87483</string>
         <string>W55006</string>
         <string>Wagon</string>
+        <string>Waleswood</string>
         <string>WaterTower</string>
         <string>Wheels</string>
         <string>Workmen</string>

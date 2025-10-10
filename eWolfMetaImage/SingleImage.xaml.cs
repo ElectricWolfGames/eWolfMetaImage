@@ -1,16 +1,15 @@
-﻿using System;
+﻿using eWolfMetaImage.Data;
+using eWolfTagHolders.Services;
+using eWolfTagHolders.Tags;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
-using System.Security.AccessControl;
-using System.Security.Policy;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
-using eWolfMetaImage.Data;
-using eWolfTagHolders.Services;
-using eWolfTagHolders.Tags;
 
 namespace eWolfMetaImage
 {

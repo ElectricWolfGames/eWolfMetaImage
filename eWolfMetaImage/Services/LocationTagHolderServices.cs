@@ -1,7 +1,8 @@
-﻿using System.IO;
-using System.Xml.Serialization;
-using eWolfCommon.Helpers;
+﻿using eWolfCommon.Helpers;
 using eWolfTagHolders.Services;
+
+using System.IO;
+using System.Xml.Serialization;
 
 namespace eWolfMetaImage.Data
 {

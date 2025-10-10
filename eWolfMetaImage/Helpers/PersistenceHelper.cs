@@ -7,7 +7,6 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace eWolfMetaImage.Helpers
 {
-
     public class PersistenceHelper<T>
     {
         private readonly string _outputFolder;
