@@ -332,6 +332,10 @@ namespace eWolfMetaImage.Data
             groupTags.Add("80080");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("80079,BRStandard 4MT,2-6-4T");
+            groupTags.Add("80079");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("80136,BRStandard 4MT,2-6-4T");
             groupTags.Add("80136");
             GroupTagCollection.Add(groupTags);
@@ -830,6 +834,22 @@ namespace eWolfMetaImage.Data
 
             groupTags = new GroupTags("1054,LNWR,WebbCoalTank");
             groupTags.Add("1054");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("99002,Class99");
+            groupTags.Add("99002");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("70020,Class70");
+            groupTags.Add("70020");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("60103,ClassA3,FlyingScotsman");
+            groupTags.Add("60103");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("D5910,Class23,BabyDeltic");
+            groupTags.Add("D5910");
             GroupTagCollection.Add(groupTags);
         }
     }
