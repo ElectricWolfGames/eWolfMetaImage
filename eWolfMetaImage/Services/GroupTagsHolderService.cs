@@ -851,6 +851,14 @@ namespace eWolfMetaImage.Data
             groupTags = new GroupTags("D5910,Class23,BabyDeltic");
             groupTags.Add("D5910");
             GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("93002,Class93");
+            groupTags.Add("93002");
+            GroupTagCollection.Add(groupTags);
+
+            groupTags = new GroupTags("GCR506,Bultler-Henderson,GCR506,DirectorClass");
+            groupTags.Add("GCR506");
+            GroupTagCollection.Add(groupTags);
         }
     }
 }
