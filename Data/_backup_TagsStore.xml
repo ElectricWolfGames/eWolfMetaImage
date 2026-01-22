@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TagListHolders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Set>GCR</Set>
+  <Set>Default</Set>
   <TagSets>
     <TagSetsLists>
       <Set>Default</Set>
@@ -53,15 +53,6 @@
     <TagSetsLists>
       <Set>GCR</Set>
       <SetTags>
-        <string>02003</string>
-        <string>03066</string>
-        <string>03113</string>
-        <string>03118</string>
-        <string>06003</string>
-        <string>07001</string>
-        <string>08114</string>
-        <string>08220</string>
-        <string>08571</string>
         <string>08590</string>
         <string>08694</string>
         <string>08706</string>
