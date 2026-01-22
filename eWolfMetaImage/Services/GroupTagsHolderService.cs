@@ -26,6 +26,11 @@ namespace eWolfMetaImage.Data
             groupTags.AddClearTags("Class9F");
             GroupTagCollection.Add(groupTags);
 
+            groupTags = new GroupTags("92043,Class9F,2-10-0");
+            groupTags.Add("92043");
+            groupTags.AddClearTags("Class9F");
+            GroupTagCollection.Add(groupTags);
+
             groupTags = new GroupTags("D6535,Class33");
             groupTags.Add("D6535");
             GroupTagCollection.Add(groupTags);
